@@ -1,0 +1,6 @@
+Wnioski po PCB v1.1:
+1. dorobić sygnał enable z gniazda jack - dodać przycisk zwierany do masy
+2. stosować tylko BK3266 a nie BK3254
+3. zweryfikować sygnał enable do wzmacniaczy
+4. zmienić pinout złącza na standard ISP 6pin
+5. pinout serial

@@ -1,5 +1,5 @@
 # Audi-CDC-Emulator
-Emulator CD Charger with telephone function
+Emulator zmieniarki CD wraz z funkcją telefonu
 
 Procesor: AtMega328p
 Moduł BT: BK3266

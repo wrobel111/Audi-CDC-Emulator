@@ -1,7 +1,8 @@
 # Audi-CDC-Emulator
 Emulator zmieniarki CD wraz z funkcją telefonu
 
-Procesor: AtMega328p
+Procesor: ATmega328p
+
 Moduł BT: BK3266
 
 # Sterowanie modułem BT

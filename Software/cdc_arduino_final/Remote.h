@@ -2,15 +2,15 @@
 #define REMOTE_h
 
 #include <Arduino.h>
-#include "BK3254.h"
+#include "bk3254.h"
+#include <avr/interrupt.h>
+#include <SoftwareSerial.h>
 
 //#define NoneRemote
 #define SteringWheelRemote
 //#define OneButtonRemote
 
-//#define DEBUG
-
-
+#define DEBUG
 
 class Remote {
 public:
@@ -31,6 +31,7 @@ private:
 
   void checkSerial(void);
   void checkRemoteCommand(void);
+  
   
 };
 

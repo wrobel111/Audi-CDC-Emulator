@@ -1,5 +1,6 @@
 
 #include "cdc_function.h"
+//#include "BK3254.h"
 #include <Arduino.h>
 #include <util/delay.h>
 #include <avr/io.h>
@@ -9,9 +10,8 @@
 #include <avr/pgmspace.h>
 #include <util/delay.h>
 #include <SoftwareSerial.h>
-#include "BK3254.h"
 
-extern BK3254 BT;
+
 
 enum STATES
 {
@@ -47,18 +47,18 @@ const uint8_t sMENABLE[] PROGMEM = "";
 const uint8_t sMINQUIRY[] PROGMEM = "";
 const uint8_t sPRV_LIST[] PROGMEM = "";
 const uint8_t sNXT_LIST[] PROGMEM = "";
-const uint8_t sLIST1[] PROGMEM = "Bluetooth mode\r\n";    //bluetooth mode
-const uint8_t sLIST2[] PROGMEM = "USB disk mode\r\n";     //u disk mode
-const uint8_t sLIST3[] PROGMEM = "AUX mode\r\n";          //aux mode
+const uint8_t sLIST1[] PROGMEM = "COM+MBT\r\n";     //bluetooth mode
+const uint8_t sLIST2[] PROGMEM = "COM+MUD\r\n";     //u disk mode
+const uint8_t sLIST3[] PROGMEM = "COM+MAX\r\n";     //aux mode
 const uint8_t sLIST4[] PROGMEM = "";
 const uint8_t sLIST5[] PROGMEM = "";
 const uint8_t sLIST6[] PROGMEM = "";
-const uint8_t sRANDOM[] PROGMEM = "RANDOM\r\n";
-const uint8_t sPLAY[] PROGMEM = "PLAY\r\n";
-const uint8_t sSCAN[] PROGMEM = "SCAN\r\n";
-const uint8_t sSTOP[] PROGMEM = "STOP\r\n";
-const uint8_t sNEXT[] PROGMEM = "NEXT\r\n";
-const uint8_t sPREVIOUS[] PROGMEM = "PREVIOUS\r\n";
+const uint8_t sRANDOM[] PROGMEM = "COM_SMR\n";
+const uint8_t sPLAY[] PROGMEM = "COM+PA\r\n";
+const uint8_t sSCAN[] PROGMEM = "";
+const uint8_t sSTOP[] PROGMEM = "COM+PU\r\n";
+const uint8_t sNEXT[] PROGMEM = "COM+PN\r\n";
+const uint8_t sPREVIOUS[] PROGMEM = "COM+PV\r\n";
 const uint8_t sRING[] PROGMEM = "RING\r\n";
 const uint8_t sSETVOLUME[]  PROGMEM = "COM+V13\r\n";    //default volume
 const uint8_t sANSWERCALL[] PROGMEM = "BT+CA\r\n";      //Answer the call
@@ -181,13 +181,8 @@ uint8_t flag_50ms = false; // indicates that a period of 50ms isover
 uint8_t counter_timer0_overflows = 0; //timer0 overflow counts to calc 10ms
 #endif
 
-// for other function, bluetooth etc.
-volatile uint8_t my_counter_1 = 0; // counter for 10ms intervals
-volatile bool flag_100ms = false; // indicates that a period of 100ms is over
-volatile uint8_t my_counter_2 = 0; // counter for 10ms intervals
-volatile bool flag_500ms = false; // indicates that a period of 500ms is over
-volatile uint8_t my_counter_3 = 0; // counter for 10ms intervals
-volatile bool flag_250ms = false; // indicates that a period of 250ms is over
+volatile int test2 = 0;
+
 
 /* -- Modul Global Function Prototypes ------------------------------------- */
 #define TRUE 1
@@ -208,7 +203,6 @@ volatile bool flag_250ms = false; // indicates that a period of 250ms is over
 
 void Init_VWCDC(void)
 {
-  Serial.println("Initialization");
   cli();  
 
   TIMSK0 = 0x00; //on arduino timer0 is used for millis(), we change prescaler, but also need to disable overflow interrupt
@@ -283,7 +277,6 @@ void Init_VWCDC(void)
 #endif
   SendPacket(); // force first display update packet
   sei();
-  Serial.println("Ready");
   //    SREG |= 0x80;   // enable interrupts
 }
 
@@ -370,7 +363,6 @@ ISR(TIMER2_COMPA_vect)
 
 ISR(TIMER0_OVF_vect) {
   counter_timer0_overflows++;
-
   if (counter_timer0_overflows = _TIMER0_OVERFLOW_COUNTS )
   {
     counter_timer0_overflows = 0;
@@ -385,32 +377,12 @@ ISR(TIMER0_OVF_vect) {
 ISR(TIMER0_COMPA_vect)
 {
   counter_10ms_u8++;
-  my_counter_1++;
-  my_counter_2++;
-  my_counter_3++;
 
-  if (counter_10ms_u8 == 5)   // every 50ms
+  if (counter_10ms_u8 == 5)
   {
     counter_10ms_u8 = 0;
     flag_50ms = TRUE;
-  }
-
-  if (my_counter_1 == 10)    //every 100ms
-  {
-    my_counter_1 = 0;
-    flag_100ms = TRUE;
-  }
-
-  if (my_counter_2 == 50)    //every 500ms
-  {
-    my_counter_2 = 0;
-    flag_500ms = TRUE;
-  }
-
-  if (my_counter_3 == 25)    //every 250ms
-  {
-    my_counter_3 = 0;
-    flag_250ms = TRUE;
+    test2++;
   }
 }
 #endif
@@ -600,7 +572,7 @@ ISR(TIMER1_CAPT_vect)
 void CDC_Protocol(void)
 {
   uint8_t decimal_adjust_u8;
-
+  Serial.println(flag_50ms);
   if (flag_50ms == TRUE)
   {
     flag_50ms = FALSE;
@@ -688,7 +660,6 @@ void CDC_Protocol(void)
     printstr_p((char*) txbuffer[txoutptr]);
     txoutptr++;
     if (txoutptr == TX_BUFFER_END)
-        
     {
       txoutptr = 0;
     }
@@ -750,8 +721,6 @@ static void DecodeCommand(void)
   Serial.write(cmdcode);
 #endif
 
-//Serial.println(cmdcode,HEX);
-
   switch (cmdcode) {
     case Do_CHANGECD:
       // Head unit seems to send this after each CDx number change
@@ -772,7 +741,7 @@ static void DecodeCommand(void)
       if (!mix_button)
         EnqueueString(sMENABLE);
       #ifdef BLUETOOTH
-        BT.musicPlay();
+        //SendBK3266("COM+PA\r\n");
       #endif
       break;
 
@@ -792,7 +761,7 @@ static void DecodeCommand(void)
 #endif
       EnqueueString(sMDISABLE);
       #ifdef BLUETOOTH
-        BT.musicTogglePlayPause();
+        //SendBK3266("COM+PU\r\n");
       #endif
       break;
 
@@ -899,7 +868,7 @@ static void DecodeCommand(void)
 #endif
       EnqueueString(sNEXT);
       #ifdef BLUETOOTH
-        BT.musicNextTrack();
+        //SendBK3266("COM+PN\r\n");
       #endif
       break;
 
@@ -924,7 +893,7 @@ static void DecodeCommand(void)
 #endif
       EnqueueString(sPREVIOUS);
       #ifdef BLUETOOTH
-        BT.musicPreviousTrack();
+        //SendBK3266("COM+PV\r\n");
       #endif
       break;
 
@@ -936,7 +905,7 @@ static void DecodeCommand(void)
       if (cdButtonPushed(1))
           EnqueueString(sLIST1);
       #ifdef BLUETOOTH
-        BT.switchInputToBluetooth();  // bluetooth mode
+        //SendBK3266("COM+MBT\r\n");
       #endif
       break;
 
@@ -948,7 +917,7 @@ static void DecodeCommand(void)
       if (cdButtonPushed(1))
       EnqueueString(sLIST2);
       #ifdef BLUETOOTH
-        BT.switchInputToUsb();  //usb mode
+        //SendBK3266("COM+MUD\r\n");
       #endif
       break;
 
@@ -960,7 +929,7 @@ static void DecodeCommand(void)
       if (cdButtonPushed(3))
           EnqueueString(sLIST3);
       #ifdef BLUETOOTH
-        BT.switchInputToAux();  //aux mode
+        //SendBK3266("COM+MAX\r\n");
       #endif
       break;
 
@@ -1007,24 +976,20 @@ static void DecodeCommand(void)
          Dump the unknown command code for the user to view.
       */
 
-      //EnqueueString(sDASH);
-      //EnqueueHex(cmdcode);
-      //EnqueueString(sNEWLINE);
+      EnqueueString(sDASH);
+      EnqueueHex(cmdcode);
+      EnqueueString(sNEWLINE);
       break;
   }
 }
 static void printstr_p(const char *s) {
-  
-  #ifdef DEBUG
-  char c;   
-    for (c = pgm_read_byte(s); c; ++s, c = pgm_read_byte(s))
-    {
-      Serial.print(c);
-      if (c == '\n')
+  char c;
+  for (c = pgm_read_byte(s); c; ++s, c = pgm_read_byte(s))
+  {
+    Serial.print(c);
+    if (c == '\n')
       break;
-    }  
-  #endif
-  
+  }
 }
 
 //-----------------------------------------------------------------------------
@@ -1043,24 +1008,37 @@ static void printstr_p(const char *s) {
 static void ScanCommandBytes(void)
 
 {
+
+
+
   fsr = scanptr;
+
+
 
 FirstByteLoop:
 
   //printstr_p(PSTR("1"),DEBUG);
 
   if (GetCaptureByte() == FALSE)
+
   {
+
     return;
+
   }
+
+
 
 FirstByteTest:
 
   //printstr_p(PSTR("2"),DEBUG);
 
   if (scanbyte == 0x53)
+
   {
+
     goto SecondByte;
+
   }
 
   // this byte doesn't match the beginning of a normal command packet,
@@ -1071,6 +1049,8 @@ FirstByteTest:
 
   goto FirstByteLoop;
 
+
+
 SecondByte:
 
   //printstr_p(PSTR("3"),DEBUG);
@@ -1078,13 +1058,17 @@ SecondByte:
   if (GetCaptureByte() == FALSE)
 
   {
+
     return;
+
   }
 
   if (scanbyte == 0x2C) // verify that byte 2 is 0x2C)
 
   {
+
     goto ThirdByte;
+
   }
 
   // the first byte was a match, but the second byte failed.
@@ -1311,8 +1295,11 @@ static uint8_t GetCaptureByte(void)
 static void SetStateIdle(void)
 
 {
+
   playing = FALSE;
+
   BIDIstate = StateIdle;
+
 }
 static void SetStateTP(void)
 {
@@ -1337,9 +1324,13 @@ static void SetStateTP(void)
 static void SetStateIdleThenPlay(void)
 
 {
+
   playing = 0;
+
   BIDIstate = StateIdleThenPlay;
+
   BIDIcount = -20;
+
 }
 
 //-----------------------------------------------------------------------------
@@ -1357,8 +1348,11 @@ static void SetStateIdleThenPlay(void)
 static void SetStatePlay(void)
 
 {
+
   playing = TRUE;
+
   BIDIstate = StatePlay;
+
 }
 
 //-----------------------------------------------------------------------------
@@ -1376,10 +1370,15 @@ static void SetStatePlay(void)
 static void SetStateInitPlay(void)
 
 {
+
   playing = TRUE;
+
   BIDIstate = StateInitPlay;
+
   discload = 0xD1; //0xFF - 0x2E
+
   BIDIcount = -24;
+
 }
 
 //-----------------------------------------------------------------------------
@@ -1405,10 +1404,17 @@ static void SetStateInitPlay(void)
 static void SetStatePlayLeadIn(void)
 
 {
+
   playing = TRUE;
+
   BIDIstate = StatePlayLeadIn;
+
   BIDIcount = -10;
+
 }
+
+
+
 
 
 //-----------------------------------------------------------------------------
@@ -1442,9 +1448,13 @@ static void SetStatePlayLeadIn(void)
 static void SetStateTrackLeadIn(void)
 
 {
+
   playing = TRUE;
+
   BIDIstate = StateTrackLeadIn;
+
   BIDIcount = -12;
+
 }
 
 
@@ -1472,8 +1482,11 @@ static void SetStateTrackLeadIn(void)
 static void SendDisplayBytes(void)
 
 {
+
   SendByte(disc); // disc display value
+
   SendDisplayBytesNoCD();
+
 }
 
 //-----------------------------------------------------------------------------
@@ -1490,10 +1503,18 @@ static void SendDisplayBytes(void)
 static void SendDisplayBytesNoCD(void)
 
 {
+
   uint8_t send_byte_u8 = 0;
+
+
+
   SendByte(track);
+
   SendByte(minute);
+
   SendByte(second);
+
+
 
   // D4 - scan on, mix on
 
@@ -1542,6 +1563,7 @@ static void SendDisplayBytesNoCD(void)
 static void SendDisplayBytesInitCD(void)
 
 {
+
   SendByte(0x99); // number of tracks total (99)?
 
   SendByte(0x99); // total minutes?
@@ -2070,46 +2092,3 @@ static uint8_t cdButtonPushed(uint8_t cdnumber) {
         return cd5pushed;
       }
   }
-//-----------------------------------------------------------------------------
-/*!
-  \brief      uint8_t GetFlag100ms(void) etc...
-  get statuf flag 100ms, helps for bluetooth interval check
-  \author     Mateusz Wrobel
-  \date       1.03.2021
-  \param[in]  none
-  \param[out] none
-  \return     true / false
-*/
-//-----------------------------------------------------------------------------
-uint8_t GetFlag100ms()
-{
-  if(flag_100ms == 1) return true;
-  else return false;
-}
-
-uint8_t GetFlag500ms()
-{
-  if(flag_500ms == 1) return true;
-  else return false;
-}
-
-uint8_t GetFlag250ms()
-{
-  if(flag_250ms == 1) return true;
-  else return false;
-}
-
-void ClearFlag100ms()
-{
-  flag_100ms = false;
-}
-
-void ClearFlag500ms()
-{
-  flag_500ms = false;
-}
-
-void ClearFlag250ms()
-{
-  flag_250ms = false;
-}

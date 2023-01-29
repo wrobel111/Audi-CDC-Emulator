@@ -45,40 +45,34 @@
    
    ---------------------------------
    Mateusz Wrobel 27. Sep 2020
-   - bluetooth BK3254, BK3266 module 
+   - bluetooth BK3266 module 
    - telephone comunication (music and calling)
 
+
  *****************************************************************************/
-//#include "bluetooth_module.h"
+#include "bk3254.h"
 #include "cdc_function.h"
-#include "BK3254.h"
 #include "Remote.h"
 #include <SoftwareSerial.h>
 
-extern SoftwareSerial swSerial;
-extern BK3254 BT;
+extern BK3254 bt;
 extern Remote remote;
+extern SoftwareSerial BtSerial;
 
-void setup() {
+extern int counter_10ms_u8;
+
+int main()
+{
   Serial.begin(9600);
-  Serial.println("Hello world!");
+  
   Init_VWCDC();
-  Serial.println("Finish init CDC");
-  //BT.begin(9600);
-  Serial.println("Finish init Bluetooth");
-  //remote.initRemote();
-  Serial.println("Finish init remote");
+  remote.initRemote();
+  bt.init();
 
-  //BT.getInitStates();
-  Serial.println("Finish setup()");
+  while (1)
+  {
+    bt.checkState();
+    CDC_Protocol();
+    remote.protocol();
+  } 
 }
-void loop()  {
-  CDC_Protocol();
-  //BT.checkState();
-  //remote.protocol();
-}
-
-
-
-
-

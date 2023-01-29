@@ -2,11 +2,12 @@
 #include "Remote.h"
 #include "BK3254.h"
 #include <avr/interrupt.h>
-#include <SoftwareSerial.h>
 
 
-SoftwareSerial swSerial(3, 4); //rxPin, txPin, inverse_logic
-BK3254 BT(&swSerial, resetBTpin);
+
+
+extern SoftwareSerial swSerial;
+extern BK3254 BT;
 Remote remote;
 
 enum Remote::call : uint8_t {

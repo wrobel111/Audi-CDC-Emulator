@@ -1,6 +1,6 @@
 
 #include "cdc_function.h"
-//#include "bk3266.h"
+#include "bk3254.h"
 #include <Arduino.h>
 #include <util/delay.h>
 #include <avr/io.h>
@@ -11,7 +11,7 @@
 #include <util/delay.h>
 #include <SoftwareSerial.h>
 
-
+extern BK3254 bt;
 
 enum STATES
 {
@@ -180,6 +180,8 @@ uint8_t flag_50ms = false; // indicates that a period of 50ms isover
 uint8_t counter_timer0_overflows = 0; //timer0 overflow counts to calc 10ms
 #endif
 
+uint8_t my_counter1 = 0;
+uint8_t flag_250ms = false;
 /* -- Modul Global Function Prototypes ------------------------------------- */
 #define TRUE 1
 #define FALSE 0
@@ -378,12 +380,17 @@ ISR(TIMER0_OVF_vect) {
 ISR(TIMER0_COMPA_vect)
 {
   counter_10ms_u8++;
+  my_counter1++;
 
-  if (counter_10ms_u8 == 5)
+  if (counter_10ms_u8 == 5) //50ms
   {
     counter_10ms_u8 = 0;
     flag_50ms = TRUE;
-    test2++;
+  }
+  if (my_counter1 == 25)  //250ms
+  {
+    my_counter1 = 0;
+    flag_250ms = TRUE;
   }
 }
 #endif
@@ -594,9 +601,9 @@ void CDC_Protocol(void)
       if (poweridentcount == 0)
       {
         poweridentcount = POWERIDENTWAIT;
-        EnqueueString(sIDENTIFY);
-        EnqueueString(sVERSION);
-        EnqueueString(sNEWLINE);
+        //EnqueueString(sIDENTIFY);
+        //EnqueueString(sVERSION);
+        //EnqueueString(sNEWLINE);
       }
 
       second++; // increment the time display
@@ -742,7 +749,7 @@ static void DecodeCommand(void)
       if (!mix_button)
         EnqueueString(sMENABLE);
       #ifdef BLUETOOTH
-        //SendBK3266("COM+PA\r\n");
+        bt.musicPlay();
       #endif
       break;
 
@@ -762,7 +769,7 @@ static void DecodeCommand(void)
 #endif
       EnqueueString(sMDISABLE);
       #ifdef BLUETOOTH
-        //SendBK3266("COM+PU\r\n");
+        bt.musicStop();
       #endif
       break;
 
@@ -869,7 +876,7 @@ static void DecodeCommand(void)
 #endif
       EnqueueString(sNEXT);
       #ifdef BLUETOOTH
-        //SendBK3266("COM+PN\r\n");
+        bt.musicNextTrack();
       #endif
       break;
 
@@ -894,7 +901,7 @@ static void DecodeCommand(void)
 #endif
       EnqueueString(sPREVIOUS);
       #ifdef BLUETOOTH
-        //SendBK3266("COM+PV\r\n");
+        bt.musicPreviousTrack();
       #endif
       break;
 
@@ -906,7 +913,7 @@ static void DecodeCommand(void)
       if (cdButtonPushed(1))
           EnqueueString(sLIST1);
       #ifdef BLUETOOTH
-        //SendBK3266("COM+MBT\r\n");
+        bt.send("COM+MBT\r\n");
       #endif
       break;
 
@@ -918,7 +925,7 @@ static void DecodeCommand(void)
       if (cdButtonPushed(1))
       EnqueueString(sLIST2);
       #ifdef BLUETOOTH
-        //SendBK3266("COM+MUD\r\n");
+        bt.send("COM+MUD\r\n");
       #endif
       break;
 
@@ -930,7 +937,7 @@ static void DecodeCommand(void)
       if (cdButtonPushed(3))
           EnqueueString(sLIST3);
       #ifdef BLUETOOTH
-        //SendBK3266("COM+MAX\r\n");
+        bt.send("COM+MAX\r\n");
       #endif
       break;
 

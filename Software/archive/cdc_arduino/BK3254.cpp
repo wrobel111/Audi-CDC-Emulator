@@ -9,6 +9,9 @@
 #include "BK3254.h"
 #include <Arduino.h>
 
+SoftwareSerial BtSerial(3, 4); // RX, TX
+BK3254 BT(&BtSerial, resetBTpin);
+
 #if defined(USE_SW_SERIAL)
 //#if ARDUINO >= 100
 BK3254::BK3254(SoftwareSerial *ser, uint8_t resetPin)
@@ -88,7 +91,7 @@ void BK3254::resetModule() {
 
 uint8_t BK3254::getNextEventFromBT() {
   char c;
-  static String receivedString;
+  String receivedString;
   while (btSerial -> available() > 0 && c != '\n') { //read serial buffer until \n
     c = (btSerial -> read());
     if (c == 0xA) {

@@ -17,11 +17,11 @@ The project is designed to integrate modern Bluetooth audio capabilities with fa
 
 ### Main controller
 
-- Microcontroller: ATmega328P
+- Microcontroller: ATmega328PB
 
 ### Bluetooth module
 
-- BK3266 Bluetooth audio module
+- BK3266 or BK3254 Bluetooth audio module
 
 The Bluetooth module is controlled through UART using AT commands.
 

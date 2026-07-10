@@ -1,0 +1,1692 @@
+
+C:\Users\mateu\AppData\Local\Temp\arduino\sketches\FA48DF81DA009239FB7872E38AC14F91/SerialEvent.ino.elf:     file format elf32-avr
+
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+__vectors():
+../../../../crt1/gcrt1.S:65
+   0:	0c 94 5b 00 	jmp	0xb6	; 0xb6 <__ctors_end>
+../../../../crt1/gcrt1.S:67
+   4:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+../../../../crt1/gcrt1.S:68
+   8:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+../../../../crt1/gcrt1.S:69
+   c:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+../../../../crt1/gcrt1.S:70
+  10:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+../../../../crt1/gcrt1.S:71
+  14:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+../../../../crt1/gcrt1.S:72
+  18:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+../../../../crt1/gcrt1.S:73
+  1c:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+../../../../crt1/gcrt1.S:74
+  20:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+../../../../crt1/gcrt1.S:75
+  24:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+../../../../crt1/gcrt1.S:76
+  28:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+../../../../crt1/gcrt1.S:77
+  2c:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+../../../../crt1/gcrt1.S:78
+  30:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+../../../../crt1/gcrt1.S:79
+  34:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+../../../../crt1/gcrt1.S:80
+  38:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+../../../../crt1/gcrt1.S:81
+  3c:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+../../../../crt1/gcrt1.S:82
+  40:	0c 94 c8 02 	jmp	0x590	; 0x590 <__vector_16>
+../../../../crt1/gcrt1.S:83
+  44:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+../../../../crt1/gcrt1.S:84
+  48:	0c 94 d2 01 	jmp	0x3a4	; 0x3a4 <__vector_18>
+../../../../crt1/gcrt1.S:85
+  4c:	0c 94 04 02 	jmp	0x408	; 0x408 <__vector_19>
+../../../../crt1/gcrt1.S:86
+  50:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+../../../../crt1/gcrt1.S:87
+  54:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+../../../../crt1/gcrt1.S:88
+  58:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+../../../../crt1/gcrt1.S:89
+  5c:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+../../../../crt1/gcrt1.S:90
+  60:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+../../../../crt1/gcrt1.S:91
+  64:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+../../../../crt1/gcrt1.S:92
+  68:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+../../../../crt1/gcrt1.S:93
+  6c:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+../../../../crt1/gcrt1.S:94
+  70:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+../../../../crt1/gcrt1.S:95
+  74:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+../../../../crt1/gcrt1.S:96
+  78:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+../../../../crt1/gcrt1.S:97
+  7c:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+../../../../crt1/gcrt1.S:98
+  80:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+../../../../crt1/gcrt1.S:99
+  84:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+../../../../crt1/gcrt1.S:100
+  88:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+../../../../crt1/gcrt1.S:101
+  8c:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+../../../../crt1/gcrt1.S:102
+  90:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+../../../../crt1/gcrt1.S:103
+  94:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+../../../../crt1/gcrt1.S:104
+  98:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+../../../../crt1/gcrt1.S:105
+  9c:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+../../../../crt1/gcrt1.S:106
+  a0:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+../../../../crt1/gcrt1.S:107
+  a4:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+../../../../crt1/gcrt1.S:108
+  a8:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+../../../../crt1/gcrt1.S:109
+  ac:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+../../../../crt1/gcrt1.S:110
+  b0:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+
+000000b4 <__ctors_start>:
+__trampolines_start():
+  b4:	34 02       	muls	r19, r20
+
+000000b6 <__ctors_end>:
+__dtors_end():
+../../../../crt1/gcrt1.S:230
+  b6:	11 24       	eor	r1, r1
+../../../../crt1/gcrt1.S:231
+  b8:	1f be       	out	0x3f, r1	; 63
+../../../../crt1/gcrt1.S:232
+  ba:	cf ef       	ldi	r28, 0xFF	; 255
+../../../../crt1/gcrt1.S:241
+  bc:	d8 e0       	ldi	r29, 0x08	; 8
+../../../../crt1/gcrt1.S:242
+  be:	de bf       	out	0x3e, r29	; 62
+../../../../crt1/gcrt1.S:244
+  c0:	cd bf       	out	0x3d, r28	; 61
+
+000000c2 <__do_copy_data>:
+__do_copy_data():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2409
+  c2:	11 e0       	ldi	r17, 0x01	; 1
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2410
+  c4:	a0 e0       	ldi	r26, 0x00	; 0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2411
+  c6:	b1 e0       	ldi	r27, 0x01	; 1
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2412
+  c8:	ee ea       	ldi	r30, 0xAE	; 174
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2413
+  ca:	f7 e0       	ldi	r31, 0x07	; 7
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2414
+  cc:	02 c0       	rjmp	.+4      	; 0xd2 <__do_copy_data+0x10>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2417
+  ce:	05 90       	lpm	r0, Z+
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2422
+  d0:	0d 92       	st	X+, r0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2424
+  d2:	a2 32       	cpi	r26, 0x22	; 34
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2425
+  d4:	b1 07       	cpc	r27, r17
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2426
+  d6:	d9 f7       	brne	.-10     	; 0xce <__do_copy_data+0xc>
+
+000000d8 <__do_clear_bss>:
+__do_clear_bss():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2441
+  d8:	21 e0       	ldi	r18, 0x01	; 1
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2442
+  da:	a2 e2       	ldi	r26, 0x22	; 34
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2443
+  dc:	b1 e0       	ldi	r27, 0x01	; 1
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2444
+  de:	01 c0       	rjmp	.+2      	; 0xe2 <.do_clear_bss_start>
+
+000000e0 <.do_clear_bss_loop>:
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2446
+  e0:	1d 92       	st	X+, r1
+
+000000e2 <.do_clear_bss_start>:
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2448
+  e2:	a8 3c       	cpi	r26, 0xC8	; 200
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2449
+  e4:	b2 07       	cpc	r27, r18
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2450
+  e6:	e1 f7       	brne	.-8      	; 0xe0 <.do_clear_bss_loop>
+
+000000e8 <__do_global_ctors>:
+__do_global_ctors():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2466
+  e8:	10 e0       	ldi	r17, 0x00	; 0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2467
+  ea:	cb e5       	ldi	r28, 0x5B	; 91
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2468
+  ec:	d0 e0       	ldi	r29, 0x00	; 0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2472
+  ee:	04 c0       	rjmp	.+8      	; 0xf8 <__do_global_ctors+0x10>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2474
+  f0:	21 97       	sbiw	r28, 0x01	; 1
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2480
+  f2:	fe 01       	movw	r30, r28
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2481
+  f4:	0e 94 cf 03 	call	0x79e	; 0x79e <__tablejump2__>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2483
+  f8:	ca 35       	cpi	r28, 0x5A	; 90
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2484
+  fa:	d1 07       	cpc	r29, r17
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2489
+  fc:	c9 f7       	brne	.-14     	; 0xf0 <__do_global_ctors+0x8>
+../../../../crt1/gcrt1.S:314
+  fe:	0e 94 b9 02 	call	0x572	; 0x572 <main>
+../../../../crt1/gcrt1.S:315
+ 102:	0c 94 d5 03 	jmp	0x7aa	; 0x7aa <_exit>
+
+00000106 <__bad_interrupt>:
+__vector_38():
+../../../../crt1/gcrt1.S:209
+ 106:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+0000010a <setup>:
+_ZN14HardwareSerial5beginEm():
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/HardwareSerial.h:121
+  public:
+    inline HardwareSerial(
+      volatile uint8_t *ubrrh, volatile uint8_t *ubrrl,
+      volatile uint8_t *ucsra, volatile uint8_t *ucsrb,
+      volatile uint8_t *ucsrc, volatile uint8_t *udr);
+    void begin(unsigned long baud) { begin(baud, SERIAL_8N1); }
+ 10a:	26 e0       	ldi	r18, 0x06	; 6
+ 10c:	40 e8       	ldi	r20, 0x80	; 128
+ 10e:	55 e2       	ldi	r21, 0x25	; 37
+ 110:	60 e0       	ldi	r22, 0x00	; 0
+ 112:	70 e0       	ldi	r23, 0x00	; 0
+ 114:	82 e2       	ldi	r24, 0x22	; 34
+ 116:	91 e0       	ldi	r25, 0x01	; 1
+ 118:	0c 94 7a 01 	jmp	0x2f4	; 0x2f4 <HardwareSerial::begin(unsigned long, unsigned char)>
+
+0000011c <loop>:
+loop():
+C:\Users\mateu\AppData\Local\Temp\.arduinoIDE-unsaved2024817-14796-104x1k1.jh7z\SerialEvent/SerialEvent.ino:9
+  Serial.begin(9600);
+  
+}
+
+void loop() {
+  Serial.println("Hello world!");
+ 11c:	60 e0       	ldi	r22, 0x00	; 0
+ 11e:	71 e0       	ldi	r23, 0x01	; 1
+ 120:	82 e2       	ldi	r24, 0x22	; 34
+ 122:	91 e0       	ldi	r25, 0x01	; 1
+ 124:	0e 94 a1 02 	call	0x542	; 0x542 <Print::println(char const*)>
+C:\Users\mateu\AppData\Local\Temp\.arduinoIDE-unsaved2024817-14796-104x1k1.jh7z\SerialEvent/SerialEvent.ino:10
+  delay(500);
+ 128:	64 ef       	ldi	r22, 0xF4	; 244
+ 12a:	71 e0       	ldi	r23, 0x01	; 1
+ 12c:	80 e0       	ldi	r24, 0x00	; 0
+ 12e:	90 e0       	ldi	r25, 0x00	; 0
+ 130:	0c 94 37 03 	jmp	0x66e	; 0x66e <delay>
+
+00000134 <HardwareSerial::available()>:
+_ZN14HardwareSerial9availableEv():
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/HardwareSerial.cpp:150
+  // clear any received data
+  _rx_buffer_head = _rx_buffer_tail;
+}
+
+int HardwareSerial::available(void)
+{
+ 134:	fc 01       	movw	r30, r24
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/HardwareSerial.cpp:151
+  return ((unsigned int)(SERIAL_RX_BUFFER_SIZE + _rx_buffer_head - _rx_buffer_tail)) % SERIAL_RX_BUFFER_SIZE;
+ 136:	91 8d       	ldd	r25, Z+25	; 0x19
+ 138:	22 8d       	ldd	r18, Z+26	; 0x1a
+ 13a:	89 2f       	mov	r24, r25
+ 13c:	90 e0       	ldi	r25, 0x00	; 0
+ 13e:	80 5c       	subi	r24, 0xC0	; 192
+ 140:	9f 4f       	sbci	r25, 0xFF	; 255
+ 142:	82 1b       	sub	r24, r18
+ 144:	91 09       	sbc	r25, r1
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/HardwareSerial.cpp:152
+}
+ 146:	8f 73       	andi	r24, 0x3F	; 63
+ 148:	99 27       	eor	r25, r25
+ 14a:	08 95       	ret
+
+0000014c <HardwareSerial::peek()>:
+_ZN14HardwareSerial4peekEv():
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/HardwareSerial.cpp:155
+
+int HardwareSerial::peek(void)
+{
+ 14c:	fc 01       	movw	r30, r24
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/HardwareSerial.cpp:156
+  if (_rx_buffer_head == _rx_buffer_tail) {
+ 14e:	91 8d       	ldd	r25, Z+25	; 0x19
+ 150:	82 8d       	ldd	r24, Z+26	; 0x1a
+ 152:	98 17       	cp	r25, r24
+ 154:	31 f0       	breq	.+12     	; 0x162 <HardwareSerial::peek()+0x16>
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/HardwareSerial.cpp:159
+    return -1;
+  } else {
+    return _rx_buffer[_rx_buffer_tail];
+ 156:	82 8d       	ldd	r24, Z+26	; 0x1a
+ 158:	e8 0f       	add	r30, r24
+ 15a:	f1 1d       	adc	r31, r1
+ 15c:	85 8d       	ldd	r24, Z+29	; 0x1d
+ 15e:	90 e0       	ldi	r25, 0x00	; 0
+ 160:	08 95       	ret
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/HardwareSerial.cpp:157
+}
+
+int HardwareSerial::peek(void)
+{
+  if (_rx_buffer_head == _rx_buffer_tail) {
+    return -1;
+ 162:	8f ef       	ldi	r24, 0xFF	; 255
+ 164:	9f ef       	ldi	r25, 0xFF	; 255
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/HardwareSerial.cpp:161
+  } else {
+    return _rx_buffer[_rx_buffer_tail];
+  }
+}
+ 166:	08 95       	ret
+
+00000168 <HardwareSerial::read()>:
+_ZN14HardwareSerial4readEv():
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/HardwareSerial.cpp:164
+
+int HardwareSerial::read(void)
+{
+ 168:	fc 01       	movw	r30, r24
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/HardwareSerial.cpp:166
+  // if the head isn't ahead of the tail, we don't have any characters
+  if (_rx_buffer_head == _rx_buffer_tail) {
+ 16a:	91 8d       	ldd	r25, Z+25	; 0x19
+ 16c:	82 8d       	ldd	r24, Z+26	; 0x1a
+ 16e:	98 17       	cp	r25, r24
+ 170:	61 f0       	breq	.+24     	; 0x18a <HardwareSerial::read()+0x22>
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/HardwareSerial.cpp:169
+    return -1;
+  } else {
+    unsigned char c = _rx_buffer[_rx_buffer_tail];
+ 172:	a2 8d       	ldd	r26, Z+26	; 0x1a
+ 174:	ae 0f       	add	r26, r30
+ 176:	bf 2f       	mov	r27, r31
+ 178:	b1 1d       	adc	r27, r1
+ 17a:	5d 96       	adiw	r26, 0x1d	; 29
+ 17c:	8c 91       	ld	r24, X
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/HardwareSerial.cpp:170
+    _rx_buffer_tail = (rx_buffer_index_t)(_rx_buffer_tail + 1) % SERIAL_RX_BUFFER_SIZE;
+ 17e:	92 8d       	ldd	r25, Z+26	; 0x1a
+ 180:	9f 5f       	subi	r25, 0xFF	; 255
+ 182:	9f 73       	andi	r25, 0x3F	; 63
+ 184:	92 8f       	std	Z+26, r25	; 0x1a
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/HardwareSerial.cpp:171
+    return c;
+ 186:	90 e0       	ldi	r25, 0x00	; 0
+ 188:	08 95       	ret
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/HardwareSerial.cpp:167
+
+int HardwareSerial::read(void)
+{
+  // if the head isn't ahead of the tail, we don't have any characters
+  if (_rx_buffer_head == _rx_buffer_tail) {
+    return -1;
+ 18a:	8f ef       	ldi	r24, 0xFF	; 255
+ 18c:	9f ef       	ldi	r25, 0xFF	; 255
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/HardwareSerial.cpp:173
+  } else {
+    unsigned char c = _rx_buffer[_rx_buffer_tail];
+    _rx_buffer_tail = (rx_buffer_index_t)(_rx_buffer_tail + 1) % SERIAL_RX_BUFFER_SIZE;
+    return c;
+  }
+}
+ 18e:	08 95       	ret
+
+00000190 <HardwareSerial::availableForWrite()>:
+_ZN14HardwareSerial17availableForWriteEv():
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/HardwareSerial.cpp:181
+{
+#if (SERIAL_TX_BUFFER_SIZE>256)
+  uint8_t oldSREG = SREG;
+  cli();
+#endif
+  tx_buffer_index_t head = _tx_buffer_head;
+ 190:	fc 01       	movw	r30, r24
+ 192:	53 8d       	ldd	r21, Z+27	; 0x1b
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/HardwareSerial.cpp:182
+  tx_buffer_index_t tail = _tx_buffer_tail;
+ 194:	44 8d       	ldd	r20, Z+28	; 0x1c
+ 196:	25 2f       	mov	r18, r21
+ 198:	30 e0       	ldi	r19, 0x00	; 0
+ 19a:	84 2f       	mov	r24, r20
+ 19c:	90 e0       	ldi	r25, 0x00	; 0
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/HardwareSerial.cpp:186
+#if (SERIAL_TX_BUFFER_SIZE>256)
+  SREG = oldSREG;
+#endif
+  if (head >= tail) return SERIAL_TX_BUFFER_SIZE - 1 - head + tail;
+ 19e:	82 1b       	sub	r24, r18
+ 1a0:	93 0b       	sbc	r25, r19
+ 1a2:	54 17       	cp	r21, r20
+ 1a4:	10 f0       	brcs	.+4      	; 0x1aa <HardwareSerial::availableForWrite()+0x1a>
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/HardwareSerial.cpp:186 (discriminator 1)
+ 1a6:	cf 96       	adiw	r24, 0x3f	; 63
+ 1a8:	08 95       	ret
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/HardwareSerial.cpp:187
+  return tail - head - 1;
+ 1aa:	01 97       	sbiw	r24, 0x01	; 1
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/HardwareSerial.cpp:188
+}
+ 1ac:	08 95       	ret
+
+000001ae <serialEventRun()>:
+_Z14serialEventRunv():
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/HardwareSerial.cpp:66
+#endif
+
+void serialEventRun(void)
+{
+#if defined(HAVE_HWSERIAL0)
+  if (Serial0_available && serialEvent && Serial0_available()) serialEvent();
+ 1ae:	8a e2       	ldi	r24, 0x2A	; 42
+ 1b0:	92 e0       	ldi	r25, 0x02	; 2
+ 1b2:	89 2b       	or	r24, r25
+ 1b4:	49 f0       	breq	.+18     	; 0x1c8 <serialEventRun()+0x1a>
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/HardwareSerial.cpp:66 (discriminator 1)
+ 1b6:	80 e0       	ldi	r24, 0x00	; 0
+ 1b8:	90 e0       	ldi	r25, 0x00	; 0
+ 1ba:	89 2b       	or	r24, r25
+ 1bc:	29 f0       	breq	.+10     	; 0x1c8 <serialEventRun()+0x1a>
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/HardwareSerial.cpp:66 (discriminator 3)
+ 1be:	0e 94 2a 02 	call	0x454	; 0x454 <Serial0_available()>
+ 1c2:	81 11       	cpse	r24, r1
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/HardwareSerial.cpp:66
+ 1c4:	0e 94 00 00 	call	0	; 0x0 <__vectors>
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/HardwareSerial.cpp:69
+#endif
+#if defined(HAVE_HWSERIAL1)
+  if (Serial1_available && serialEvent1 && Serial1_available()) serialEvent1();
+ 1c8:	80 e0       	ldi	r24, 0x00	; 0
+ 1ca:	90 e0       	ldi	r25, 0x00	; 0
+ 1cc:	89 2b       	or	r24, r25
+ 1ce:	49 f0       	breq	.+18     	; 0x1e2 <serialEventRun()+0x34>
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/HardwareSerial.cpp:69 (discriminator 1)
+ 1d0:	80 e0       	ldi	r24, 0x00	; 0
+ 1d2:	90 e0       	ldi	r25, 0x00	; 0
+ 1d4:	89 2b       	or	r24, r25
+ 1d6:	29 f0       	breq	.+10     	; 0x1e2 <serialEventRun()+0x34>
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/HardwareSerial.cpp:69 (discriminator 3)
+ 1d8:	0e 94 00 00 	call	0	; 0x0 <__vectors>
+ 1dc:	81 11       	cpse	r24, r1
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/HardwareSerial.cpp:69
+ 1de:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/HardwareSerial.cpp:77
+  if (Serial2_available && serialEvent2 && Serial2_available()) serialEvent2();
+#endif
+#if defined(HAVE_HWSERIAL3)
+  if (Serial3_available && serialEvent3 && Serial3_available()) serialEvent3();
+#endif
+}
+ 1e2:	08 95       	ret
+
+000001e4 <HardwareSerial::_tx_udr_empty_irq()>:
+_ZN14HardwareSerial17_tx_udr_empty_irqEv():
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/HardwareSerial.cpp:82
+
+// Actual interrupt handlers //////////////////////////////////////////////////////////////
+
+void HardwareSerial::_tx_udr_empty_irq(void)
+{
+ 1e4:	fc 01       	movw	r30, r24
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/HardwareSerial.cpp:85
+  // If interrupts are enabled, there must be more data in the output
+  // buffer. Send the next byte
+  unsigned char c = _tx_buffer[_tx_buffer_tail];
+ 1e6:	a4 8d       	ldd	r26, Z+28	; 0x1c
+ 1e8:	a8 0f       	add	r26, r24
+ 1ea:	b9 2f       	mov	r27, r25
+ 1ec:	b1 1d       	adc	r27, r1
+ 1ee:	a3 5a       	subi	r26, 0xA3	; 163
+ 1f0:	bf 4f       	sbci	r27, 0xFF	; 255
+ 1f2:	2c 91       	ld	r18, X
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/HardwareSerial.cpp:86
+  _tx_buffer_tail = (_tx_buffer_tail + 1) % SERIAL_TX_BUFFER_SIZE;
+ 1f4:	84 8d       	ldd	r24, Z+28	; 0x1c
+ 1f6:	90 e0       	ldi	r25, 0x00	; 0
+ 1f8:	01 96       	adiw	r24, 0x01	; 1
+ 1fa:	8f 73       	andi	r24, 0x3F	; 63
+ 1fc:	99 27       	eor	r25, r25
+ 1fe:	84 8f       	std	Z+28, r24	; 0x1c
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/HardwareSerial.cpp:88
+
+  *_udr = c;
+ 200:	a6 89       	ldd	r26, Z+22	; 0x16
+ 202:	b7 89       	ldd	r27, Z+23	; 0x17
+ 204:	2c 93       	st	X, r18
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/HardwareSerial.cpp:93
+
+  // clear the TXC bit -- "can be cleared by writing a one to its bit
+  // location". This makes sure flush() won't return until the bytes
+  // actually got written
+  *_ucsra |= _BV(TXC0);
+ 206:	a0 89       	ldd	r26, Z+16	; 0x10
+ 208:	b1 89       	ldd	r27, Z+17	; 0x11
+ 20a:	8c 91       	ld	r24, X
+ 20c:	80 64       	ori	r24, 0x40	; 64
+ 20e:	8c 93       	st	X, r24
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/HardwareSerial.cpp:95
+
+  if (_tx_buffer_head == _tx_buffer_tail) {
+ 210:	93 8d       	ldd	r25, Z+27	; 0x1b
+ 212:	84 8d       	ldd	r24, Z+28	; 0x1c
+ 214:	98 13       	cpse	r25, r24
+ 216:	06 c0       	rjmp	.+12     	; 0x224 <HardwareSerial::_tx_udr_empty_irq()+0x40>
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/HardwareSerial.cpp:97
+    // Buffer empty, so disable interrupts
+    *_ucsrb &= ~_BV(UDRIE0);
+ 218:	02 88       	ldd	r0, Z+18	; 0x12
+ 21a:	f3 89       	ldd	r31, Z+19	; 0x13
+ 21c:	e0 2d       	mov	r30, r0
+ 21e:	80 81       	ld	r24, Z
+ 220:	8f 7d       	andi	r24, 0xDF	; 223
+ 222:	80 83       	st	Z, r24
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/HardwareSerial.cpp:99
+  }
+}
+ 224:	08 95       	ret
+
+00000226 <HardwareSerial::flush()>:
+_ZN14HardwareSerial5flushEv():
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/HardwareSerial.cpp:191
+  if (head >= tail) return SERIAL_TX_BUFFER_SIZE - 1 - head + tail;
+  return tail - head - 1;
+}
+
+void HardwareSerial::flush()
+{
+ 226:	cf 93       	push	r28
+ 228:	df 93       	push	r29
+ 22a:	ec 01       	movw	r28, r24
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/HardwareSerial.cpp:195
+  // If we have never written a byte, no need to flush. This special
+  // case is needed since there is no way to force the TXC (transmit
+  // complete) bit to 1 during initialization
+  if (!_written)
+ 22c:	88 8d       	ldd	r24, Y+24	; 0x18
+ 22e:	88 23       	and	r24, r24
+ 230:	b9 f0       	breq	.+46     	; 0x260 <HardwareSerial::flush()+0x3a>
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/HardwareSerial.cpp:198
+    return;
+
+  while (bit_is_set(*_ucsrb, UDRIE0) || bit_is_clear(*_ucsra, TXC0)) {
+ 232:	aa 89       	ldd	r26, Y+18	; 0x12
+ 234:	bb 89       	ldd	r27, Y+19	; 0x13
+ 236:	e8 89       	ldd	r30, Y+16	; 0x10
+ 238:	f9 89       	ldd	r31, Y+17	; 0x11
+ 23a:	8c 91       	ld	r24, X
+ 23c:	85 fd       	sbrc	r24, 5
+ 23e:	03 c0       	rjmp	.+6      	; 0x246 <HardwareSerial::flush()+0x20>
+ 240:	80 81       	ld	r24, Z
+ 242:	86 fd       	sbrc	r24, 6
+ 244:	0d c0       	rjmp	.+26     	; 0x260 <HardwareSerial::flush()+0x3a>
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/HardwareSerial.cpp:199
+    if (bit_is_clear(SREG, SREG_I) && bit_is_set(*_ucsrb, UDRIE0))
+ 246:	0f b6       	in	r0, 0x3f	; 63
+ 248:	07 fc       	sbrc	r0, 7
+ 24a:	f7 cf       	rjmp	.-18     	; 0x23a <HardwareSerial::flush()+0x14>
+ 24c:	8c 91       	ld	r24, X
+ 24e:	85 ff       	sbrs	r24, 5
+ 250:	f2 cf       	rjmp	.-28     	; 0x236 <HardwareSerial::flush()+0x10>
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/HardwareSerial.cpp:203
+      // Interrupts are globally disabled, but the DR empty
+      // interrupt should be enabled, so poll the DR empty flag to
+      // prevent deadlock
+      if (bit_is_set(*_ucsra, UDRE0))
+ 252:	80 81       	ld	r24, Z
+ 254:	85 ff       	sbrs	r24, 5
+ 256:	ed cf       	rjmp	.-38     	; 0x232 <HardwareSerial::flush()+0xc>
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/HardwareSerial.cpp:204
+        _tx_udr_empty_irq();
+ 258:	ce 01       	movw	r24, r28
+ 25a:	0e 94 f2 00 	call	0x1e4	; 0x1e4 <HardwareSerial::_tx_udr_empty_irq()>
+ 25e:	e9 cf       	rjmp	.-46     	; 0x232 <HardwareSerial::flush()+0xc>
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/HardwareSerial.cpp:208
+  }
+  // If we get here, nothing is queued anymore (DRIE is disabled) and
+  // the hardware finished tranmission (TXC is set).
+}
+ 260:	df 91       	pop	r29
+ 262:	cf 91       	pop	r28
+ 264:	08 95       	ret
+
+00000266 <HardwareSerial::write(unsigned char)>:
+_ZN14HardwareSerial5writeEh():
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/HardwareSerial.cpp:211
+
+size_t HardwareSerial::write(uint8_t c)
+{
+ 266:	ef 92       	push	r14
+ 268:	ff 92       	push	r15
+ 26a:	0f 93       	push	r16
+ 26c:	1f 93       	push	r17
+ 26e:	cf 93       	push	r28
+ 270:	df 93       	push	r29
+ 272:	ec 01       	movw	r28, r24
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/HardwareSerial.cpp:212
+  _written = true;
+ 274:	81 e0       	ldi	r24, 0x01	; 1
+ 276:	88 8f       	std	Y+24, r24	; 0x18
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/HardwareSerial.cpp:217
+  // If the buffer and the data register is empty, just write the byte
+  // to the data register and be done. This shortcut helps
+  // significantly improve the effective datarate at high (>
+  // 500kbit/s) bitrates, where interrupt overhead becomes a slowdown.
+  if (_tx_buffer_head == _tx_buffer_tail && bit_is_set(*_ucsra, UDRE0)) {
+ 278:	9b 8d       	ldd	r25, Y+27	; 0x1b
+ 27a:	8c 8d       	ldd	r24, Y+28	; 0x1c
+ 27c:	98 13       	cpse	r25, r24
+ 27e:	16 c0       	rjmp	.+44     	; 0x2ac <HardwareSerial::write(unsigned char)+0x46>
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/HardwareSerial.cpp:217 (discriminator 1)
+ 280:	e8 89       	ldd	r30, Y+16	; 0x10
+ 282:	f9 89       	ldd	r31, Y+17	; 0x11
+ 284:	80 81       	ld	r24, Z
+ 286:	85 ff       	sbrs	r24, 5
+ 288:	11 c0       	rjmp	.+34     	; 0x2ac <HardwareSerial::write(unsigned char)+0x46>
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/HardwareSerial.cpp:218
+    *_udr = c;
+ 28a:	ee 89       	ldd	r30, Y+22	; 0x16
+ 28c:	ff 89       	ldd	r31, Y+23	; 0x17
+ 28e:	60 83       	st	Z, r22
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/HardwareSerial.cpp:219
+    *_ucsra |= _BV(TXC0);
+ 290:	e8 89       	ldd	r30, Y+16	; 0x10
+ 292:	f9 89       	ldd	r31, Y+17	; 0x11
+ 294:	80 81       	ld	r24, Z
+ 296:	80 64       	ori	r24, 0x40	; 64
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/HardwareSerial.cpp:242
+  }
+
+  _tx_buffer[_tx_buffer_head] = c;
+  _tx_buffer_head = i;
+
+  *_ucsrb |= _BV(UDRIE0);
+ 298:	80 83       	st	Z, r24
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/HardwareSerial.cpp:245
+  
+  return 1;
+}
+ 29a:	81 e0       	ldi	r24, 0x01	; 1
+ 29c:	90 e0       	ldi	r25, 0x00	; 0
+ 29e:	df 91       	pop	r29
+ 2a0:	cf 91       	pop	r28
+ 2a2:	1f 91       	pop	r17
+ 2a4:	0f 91       	pop	r16
+ 2a6:	ff 90       	pop	r15
+ 2a8:	ef 90       	pop	r14
+ 2aa:	08 95       	ret
+ 2ac:	f6 2e       	mov	r15, r22
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/HardwareSerial.cpp:222
+  if (_tx_buffer_head == _tx_buffer_tail && bit_is_set(*_ucsra, UDRE0)) {
+    *_udr = c;
+    *_ucsra |= _BV(TXC0);
+    return 1;
+  }
+  tx_buffer_index_t i = (_tx_buffer_head + 1) % SERIAL_TX_BUFFER_SIZE;
+ 2ae:	0b 8d       	ldd	r16, Y+27	; 0x1b
+ 2b0:	10 e0       	ldi	r17, 0x00	; 0
+ 2b2:	0f 5f       	subi	r16, 0xFF	; 255
+ 2b4:	1f 4f       	sbci	r17, 0xFF	; 255
+ 2b6:	0f 73       	andi	r16, 0x3F	; 63
+ 2b8:	11 27       	eor	r17, r17
+ 2ba:	e0 2e       	mov	r14, r16
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/HardwareSerial.cpp:226
+
+  // If the output buffer is full, there's nothing for it other than to 
+  // wait for the interrupt handler to empty it a bit
+  while (i == _tx_buffer_tail) {
+ 2bc:	8c 8d       	ldd	r24, Y+28	; 0x1c
+ 2be:	8e 11       	cpse	r24, r14
+ 2c0:	0c c0       	rjmp	.+24     	; 0x2da <HardwareSerial::write(unsigned char)+0x74>
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/HardwareSerial.cpp:227
+    if (bit_is_clear(SREG, SREG_I)) {
+ 2c2:	0f b6       	in	r0, 0x3f	; 63
+ 2c4:	07 fc       	sbrc	r0, 7
+ 2c6:	fa cf       	rjmp	.-12     	; 0x2bc <HardwareSerial::write(unsigned char)+0x56>
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/HardwareSerial.cpp:232
+      // Interrupts are disabled, so we'll have to poll the data
+      // register empty flag ourselves. If it is set, pretend an
+      // interrupt has happened and call the handler to free up
+      // space for us.
+      if(bit_is_set(*_ucsra, UDRE0))
+ 2c8:	e8 89       	ldd	r30, Y+16	; 0x10
+ 2ca:	f9 89       	ldd	r31, Y+17	; 0x11
+ 2cc:	80 81       	ld	r24, Z
+ 2ce:	85 ff       	sbrs	r24, 5
+ 2d0:	f5 cf       	rjmp	.-22     	; 0x2bc <HardwareSerial::write(unsigned char)+0x56>
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/HardwareSerial.cpp:233
+        _tx_udr_empty_irq();
+ 2d2:	ce 01       	movw	r24, r28
+ 2d4:	0e 94 f2 00 	call	0x1e4	; 0x1e4 <HardwareSerial::_tx_udr_empty_irq()>
+ 2d8:	f1 cf       	rjmp	.-30     	; 0x2bc <HardwareSerial::write(unsigned char)+0x56>
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/HardwareSerial.cpp:239
+    } else {
+      // nop, the interrupt handler will free up space for us
+    }
+  }
+
+  _tx_buffer[_tx_buffer_head] = c;
+ 2da:	eb 8d       	ldd	r30, Y+27	; 0x1b
+ 2dc:	ec 0f       	add	r30, r28
+ 2de:	fd 2f       	mov	r31, r29
+ 2e0:	f1 1d       	adc	r31, r1
+ 2e2:	e3 5a       	subi	r30, 0xA3	; 163
+ 2e4:	ff 4f       	sbci	r31, 0xFF	; 255
+ 2e6:	f0 82       	st	Z, r15
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/HardwareSerial.cpp:240
+  _tx_buffer_head = i;
+ 2e8:	0b 8f       	std	Y+27, r16	; 0x1b
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/HardwareSerial.cpp:242
+
+  *_ucsrb |= _BV(UDRIE0);
+ 2ea:	ea 89       	ldd	r30, Y+18	; 0x12
+ 2ec:	fb 89       	ldd	r31, Y+19	; 0x13
+ 2ee:	80 81       	ld	r24, Z
+ 2f0:	80 62       	ori	r24, 0x20	; 32
+ 2f2:	d2 cf       	rjmp	.-92     	; 0x298 <HardwareSerial::write(unsigned char)+0x32>
+
+000002f4 <HardwareSerial::begin(unsigned long, unsigned char)>:
+_ZN14HardwareSerial5beginEmh():
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/HardwareSerial.cpp:104
+}
+
+// Public Methods //////////////////////////////////////////////////////////////
+
+void HardwareSerial::begin(unsigned long baud, byte config)
+{
+ 2f4:	cf 92       	push	r12
+ 2f6:	df 92       	push	r13
+ 2f8:	ef 92       	push	r14
+ 2fa:	ff 92       	push	r15
+ 2fc:	1f 93       	push	r17
+ 2fe:	cf 93       	push	r28
+ 300:	df 93       	push	r29
+ 302:	ec 01       	movw	r28, r24
+ 304:	6a 01       	movw	r12, r20
+ 306:	7b 01       	movw	r14, r22
+ 308:	12 2f       	mov	r17, r18
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/HardwareSerial.cpp:107
+  // Try u2x mode first
+  uint16_t baud_setting = (F_CPU / 4 / baud - 1) / 2;
+  *_ucsra = 1 << U2X0;
+ 30a:	e8 89       	ldd	r30, Y+16	; 0x10
+ 30c:	f9 89       	ldd	r31, Y+17	; 0x11
+ 30e:	82 e0       	ldi	r24, 0x02	; 2
+ 310:	80 83       	st	Z, r24
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/HardwareSerial.cpp:114
+  // hardcoded exception for 57600 for compatibility with the bootloader
+  // shipped with the Duemilanove and previous boards and the firmware
+  // on the 8U2 on the Uno and Mega 2560. Also, The baud_setting cannot
+  // be > 4095, so switch back to non-u2x mode if the baud rate is too
+  // low.
+  if (((F_CPU == 16000000UL) && (baud == 57600)) || (baud_setting >4095))
+ 312:	c1 14       	cp	r12, r1
+ 314:	81 ee       	ldi	r24, 0xE1	; 225
+ 316:	d8 06       	cpc	r13, r24
+ 318:	e1 04       	cpc	r14, r1
+ 31a:	f1 04       	cpc	r15, r1
+ 31c:	a1 f0       	breq	.+40     	; 0x346 <HardwareSerial::begin(unsigned long, unsigned char)+0x52>
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/HardwareSerial.cpp:106 (discriminator 1)
+// Public Methods //////////////////////////////////////////////////////////////
+
+void HardwareSerial::begin(unsigned long baud, byte config)
+{
+  // Try u2x mode first
+  uint16_t baud_setting = (F_CPU / 4 / baud - 1) / 2;
+ 31e:	60 e0       	ldi	r22, 0x00	; 0
+ 320:	79 e0       	ldi	r23, 0x09	; 9
+ 322:	8d e3       	ldi	r24, 0x3D	; 61
+ 324:	90 e0       	ldi	r25, 0x00	; 0
+ 326:	a7 01       	movw	r20, r14
+ 328:	96 01       	movw	r18, r12
+ 32a:	0e 94 ad 03 	call	0x75a	; 0x75a <__udivmodsi4>
+ 32e:	21 50       	subi	r18, 0x01	; 1
+ 330:	31 09       	sbc	r19, r1
+ 332:	41 09       	sbc	r20, r1
+ 334:	51 09       	sbc	r21, r1
+ 336:	56 95       	lsr	r21
+ 338:	47 95       	ror	r20
+ 33a:	37 95       	ror	r19
+ 33c:	27 95       	ror	r18
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/HardwareSerial.cpp:114 (discriminator 1)
+  // hardcoded exception for 57600 for compatibility with the bootloader
+  // shipped with the Duemilanove and previous boards and the firmware
+  // on the 8U2 on the Uno and Mega 2560. Also, The baud_setting cannot
+  // be > 4095, so switch back to non-u2x mode if the baud rate is too
+  // low.
+  if (((F_CPU == 16000000UL) && (baud == 57600)) || (baud_setting >4095))
+ 33e:	21 15       	cp	r18, r1
+ 340:	80 e1       	ldi	r24, 0x10	; 16
+ 342:	38 07       	cpc	r19, r24
+ 344:	98 f0       	brcs	.+38     	; 0x36c <HardwareSerial::begin(unsigned long, unsigned char)+0x78>
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/HardwareSerial.cpp:116
+  {
+    *_ucsra = 0;
+ 346:	e8 89       	ldd	r30, Y+16	; 0x10
+ 348:	f9 89       	ldd	r31, Y+17	; 0x11
+ 34a:	10 82       	st	Z, r1
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/HardwareSerial.cpp:117
+    baud_setting = (F_CPU / 8 / baud - 1) / 2;
+ 34c:	60 e8       	ldi	r22, 0x80	; 128
+ 34e:	74 e8       	ldi	r23, 0x84	; 132
+ 350:	8e e1       	ldi	r24, 0x1E	; 30
+ 352:	90 e0       	ldi	r25, 0x00	; 0
+ 354:	a7 01       	movw	r20, r14
+ 356:	96 01       	movw	r18, r12
+ 358:	0e 94 ad 03 	call	0x75a	; 0x75a <__udivmodsi4>
+ 35c:	21 50       	subi	r18, 0x01	; 1
+ 35e:	31 09       	sbc	r19, r1
+ 360:	41 09       	sbc	r20, r1
+ 362:	51 09       	sbc	r21, r1
+ 364:	56 95       	lsr	r21
+ 366:	47 95       	ror	r20
+ 368:	37 95       	ror	r19
+ 36a:	27 95       	ror	r18
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/HardwareSerial.cpp:121
+  }
+
+  // assign the baud_setting, a.k.a. ubrr (USART Baud Rate Register)
+  *_ubrrh = baud_setting >> 8;
+ 36c:	ec 85       	ldd	r30, Y+12	; 0x0c
+ 36e:	fd 85       	ldd	r31, Y+13	; 0x0d
+ 370:	30 83       	st	Z, r19
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/HardwareSerial.cpp:122
+  *_ubrrl = baud_setting;
+ 372:	ee 85       	ldd	r30, Y+14	; 0x0e
+ 374:	ff 85       	ldd	r31, Y+15	; 0x0f
+ 376:	20 83       	st	Z, r18
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/HardwareSerial.cpp:124
+
+  _written = false;
+ 378:	18 8e       	std	Y+24, r1	; 0x18
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/HardwareSerial.cpp:132
+#if defined(__AVR_ATmega8__) || defined(__AVR_ATmega8515__) || defined(__AVR_ATmega162__) \
+|| defined(__AVR_ATmega8535__) || defined(__AVR_ATmega16__)|| defined(__AVR_ATmega32__)   \
+|| defined(__AVR_ATmega162__)
+  config |= 0x80; // select UCSRC register (shared with UBRRH)
+#endif
+  *_ucsrc = config;
+ 37a:	ec 89       	ldd	r30, Y+20	; 0x14
+ 37c:	fd 89       	ldd	r31, Y+21	; 0x15
+ 37e:	10 83       	st	Z, r17
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/HardwareSerial.cpp:134
+  
+  *_ucsrb |= _BV(RXEN0) | _BV(TXEN0) | _BV(RXCIE0);
+ 380:	ea 89       	ldd	r30, Y+18	; 0x12
+ 382:	fb 89       	ldd	r31, Y+19	; 0x13
+ 384:	80 81       	ld	r24, Z
+ 386:	88 69       	ori	r24, 0x98	; 152
+ 388:	80 83       	st	Z, r24
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/HardwareSerial.cpp:135
+  *_ucsrb &= ~_BV(UDRIE0);
+ 38a:	ea 89       	ldd	r30, Y+18	; 0x12
+ 38c:	fb 89       	ldd	r31, Y+19	; 0x13
+ 38e:	80 81       	ld	r24, Z
+ 390:	8f 7d       	andi	r24, 0xDF	; 223
+ 392:	80 83       	st	Z, r24
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/HardwareSerial.cpp:136
+}
+ 394:	df 91       	pop	r29
+ 396:	cf 91       	pop	r28
+ 398:	1f 91       	pop	r17
+ 39a:	ff 90       	pop	r15
+ 39c:	ef 90       	pop	r14
+ 39e:	df 90       	pop	r13
+ 3a0:	cf 90       	pop	r12
+ 3a2:	08 95       	ret
+
+000003a4 <__vector_18>:
+__vector_18():
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/HardwareSerial0.cpp:50
+#elif defined(USART_RXC_vect)
+  ISR(USART_RXC_vect)
+#else
+  #error "Don't know what the Data Received vector is called for Serial"
+#endif
+  {
+ 3a4:	1f 92       	push	r1
+ 3a6:	0f 92       	push	r0
+ 3a8:	0f b6       	in	r0, 0x3f	; 63
+ 3aa:	0f 92       	push	r0
+ 3ac:	11 24       	eor	r1, r1
+ 3ae:	2f 93       	push	r18
+ 3b0:	8f 93       	push	r24
+ 3b2:	9f 93       	push	r25
+ 3b4:	ef 93       	push	r30
+ 3b6:	ff 93       	push	r31
+_ZN14HardwareSerial16_rx_complete_irqEv():
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/HardwareSerial_private.h:103
+
+// Actual interrupt handlers //////////////////////////////////////////////////////////////
+
+void HardwareSerial::_rx_complete_irq(void)
+{
+  if (bit_is_clear(*_ucsra, UPE0)) {
+ 3b8:	e0 91 32 01 	lds	r30, 0x0132	; 0x800132 <__data_end+0x10>
+ 3bc:	f0 91 33 01 	lds	r31, 0x0133	; 0x800133 <__data_end+0x11>
+ 3c0:	80 81       	ld	r24, Z
+ 3c2:	e0 91 38 01 	lds	r30, 0x0138	; 0x800138 <__data_end+0x16>
+ 3c6:	f0 91 39 01 	lds	r31, 0x0139	; 0x800139 <__data_end+0x17>
+ 3ca:	82 fd       	sbrc	r24, 2
+ 3cc:	1b c0       	rjmp	.+54     	; 0x404 <__EEPROM_REGION_LENGTH__+0x4>
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/HardwareSerial_private.h:106
+    // No Parity error, read byte and store it in the buffer if there is
+    // room
+    unsigned char c = *_udr;
+ 3ce:	90 81       	ld	r25, Z
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/HardwareSerial_private.h:107
+    rx_buffer_index_t i = (unsigned int)(_rx_buffer_head + 1) % SERIAL_RX_BUFFER_SIZE;
+ 3d0:	80 91 3b 01 	lds	r24, 0x013B	; 0x80013b <__data_end+0x19>
+ 3d4:	8f 5f       	subi	r24, 0xFF	; 255
+ 3d6:	8f 73       	andi	r24, 0x3F	; 63
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/HardwareSerial_private.h:113
+
+    // if we should be storing the received character into the location
+    // just before the tail (meaning that the head would advance to the
+    // current location of the tail), we're about to overflow the buffer
+    // and so we don't write the character or advance the head.
+    if (i != _rx_buffer_tail) {
+ 3d8:	20 91 3c 01 	lds	r18, 0x013C	; 0x80013c <__data_end+0x1a>
+ 3dc:	82 17       	cp	r24, r18
+ 3de:	41 f0       	breq	.+16     	; 0x3f0 <__vector_18+0x4c>
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/HardwareSerial_private.h:114
+      _rx_buffer[_rx_buffer_head] = c;
+ 3e0:	e0 91 3b 01 	lds	r30, 0x013B	; 0x80013b <__data_end+0x19>
+ 3e4:	f0 e0       	ldi	r31, 0x00	; 0
+ 3e6:	ee 5d       	subi	r30, 0xDE	; 222
+ 3e8:	fe 4f       	sbci	r31, 0xFE	; 254
+ 3ea:	95 8f       	std	Z+29, r25	; 0x1d
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/HardwareSerial_private.h:115
+      _rx_buffer_head = i;
+ 3ec:	80 93 3b 01 	sts	0x013B, r24	; 0x80013b <__data_end+0x19>
+__vector_18():
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/HardwareSerial0.cpp:52
+    Serial._rx_complete_irq();
+  }
+ 3f0:	ff 91       	pop	r31
+ 3f2:	ef 91       	pop	r30
+ 3f4:	9f 91       	pop	r25
+ 3f6:	8f 91       	pop	r24
+ 3f8:	2f 91       	pop	r18
+ 3fa:	0f 90       	pop	r0
+ 3fc:	0f be       	out	0x3f, r0	; 63
+ 3fe:	0f 90       	pop	r0
+ 400:	1f 90       	pop	r1
+ 402:	18 95       	reti
+_ZN14HardwareSerial16_rx_complete_irqEv():
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/HardwareSerial_private.h:119
+    }
+  } else {
+    // Parity error, read byte but discard it
+    *_udr;
+ 404:	80 81       	ld	r24, Z
+__vector_18():
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/HardwareSerial0.cpp:52
+ 406:	f4 cf       	rjmp	.-24     	; 0x3f0 <__vector_18+0x4c>
+
+00000408 <__vector_19>:
+__vector_19():
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/HardwareSerial0.cpp:63
+#elif defined(USART0_UDRE_vect)
+ISR(USART0_UDRE_vect)
+#else
+  #error "Don't know what the Data Register Empty vector is called for Serial"
+#endif
+{
+ 408:	1f 92       	push	r1
+ 40a:	0f 92       	push	r0
+ 40c:	0f b6       	in	r0, 0x3f	; 63
+ 40e:	0f 92       	push	r0
+ 410:	11 24       	eor	r1, r1
+ 412:	2f 93       	push	r18
+ 414:	3f 93       	push	r19
+ 416:	4f 93       	push	r20
+ 418:	5f 93       	push	r21
+ 41a:	6f 93       	push	r22
+ 41c:	7f 93       	push	r23
+ 41e:	8f 93       	push	r24
+ 420:	9f 93       	push	r25
+ 422:	af 93       	push	r26
+ 424:	bf 93       	push	r27
+ 426:	ef 93       	push	r30
+ 428:	ff 93       	push	r31
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/HardwareSerial0.cpp:64
+  Serial._tx_udr_empty_irq();
+ 42a:	82 e2       	ldi	r24, 0x22	; 34
+ 42c:	91 e0       	ldi	r25, 0x01	; 1
+ 42e:	0e 94 f2 00 	call	0x1e4	; 0x1e4 <HardwareSerial::_tx_udr_empty_irq()>
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/HardwareSerial0.cpp:65
+}
+ 432:	ff 91       	pop	r31
+ 434:	ef 91       	pop	r30
+ 436:	bf 91       	pop	r27
+ 438:	af 91       	pop	r26
+ 43a:	9f 91       	pop	r25
+ 43c:	8f 91       	pop	r24
+ 43e:	7f 91       	pop	r23
+ 440:	6f 91       	pop	r22
+ 442:	5f 91       	pop	r21
+ 444:	4f 91       	pop	r20
+ 446:	3f 91       	pop	r19
+ 448:	2f 91       	pop	r18
+ 44a:	0f 90       	pop	r0
+ 44c:	0f be       	out	0x3f, r0	; 63
+ 44e:	0f 90       	pop	r0
+ 450:	1f 90       	pop	r1
+ 452:	18 95       	reti
+
+00000454 <Serial0_available()>:
+_Z17Serial0_availablev():
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/HardwareSerial0.cpp:76
+#endif
+
+// Function that can be weakly referenced by serialEventRun to prevent
+// pulling in this file if it's not otherwise used.
+bool Serial0_available() {
+  return Serial.available();
+ 454:	82 e2       	ldi	r24, 0x22	; 34
+ 456:	91 e0       	ldi	r25, 0x01	; 1
+ 458:	0e 94 9a 00 	call	0x134	; 0x134 <HardwareSerial::available()>
+ 45c:	21 e0       	ldi	r18, 0x01	; 1
+ 45e:	89 2b       	or	r24, r25
+ 460:	09 f4       	brne	.+2      	; 0x464 <Serial0_available()+0x10>
+ 462:	20 e0       	ldi	r18, 0x00	; 0
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/HardwareSerial0.cpp:77
+}
+ 464:	82 2f       	mov	r24, r18
+ 466:	08 95       	ret
+
+00000468 <_GLOBAL__sub_I___vector_18>:
+_ZN5PrintC4Ev():
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/Print.h:46
+    size_t printNumber(unsigned long, uint8_t);
+    size_t printFloat(double, uint8_t);
+  protected:
+    void setWriteError(int err = 1) { write_error = err; }
+  public:
+    Print() : write_error(0) {}
+ 468:	e2 e2       	ldi	r30, 0x22	; 34
+ 46a:	f1 e0       	ldi	r31, 0x01	; 1
+ 46c:	13 82       	std	Z+3, r1	; 0x03
+ 46e:	12 82       	std	Z+2, r1	; 0x02
+_ZN6StreamC4Ev():
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/Stream.h:63
+  public:
+    virtual int available() = 0;
+    virtual int read() = 0;
+    virtual int peek() = 0;
+
+    Stream() {_timeout=1000;}
+ 470:	88 ee       	ldi	r24, 0xE8	; 232
+ 472:	93 e0       	ldi	r25, 0x03	; 3
+ 474:	a0 e0       	ldi	r26, 0x00	; 0
+ 476:	b0 e0       	ldi	r27, 0x00	; 0
+ 478:	84 83       	std	Z+4, r24	; 0x04
+ 47a:	95 83       	std	Z+5, r25	; 0x05
+ 47c:	a6 83       	std	Z+6, r26	; 0x06
+ 47e:	b7 83       	std	Z+7, r27	; 0x07
+_ZN14HardwareSerialC4EPVhS1_S1_S1_S1_S1_():
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/HardwareSerial_private.h:95
+  volatile uint8_t *ucsrc, volatile uint8_t *udr) :
+    _ubrrh(ubrrh), _ubrrl(ubrrl),
+    _ucsra(ucsra), _ucsrb(ucsrb), _ucsrc(ucsrc),
+    _udr(udr),
+    _rx_buffer_head(0), _rx_buffer_tail(0),
+    _tx_buffer_head(0), _tx_buffer_tail(0)
+ 480:	81 e1       	ldi	r24, 0x11	; 17
+ 482:	91 e0       	ldi	r25, 0x01	; 1
+ 484:	91 83       	std	Z+1, r25	; 0x01
+ 486:	80 83       	st	Z, r24
+ 488:	85 ec       	ldi	r24, 0xC5	; 197
+ 48a:	90 e0       	ldi	r25, 0x00	; 0
+ 48c:	95 87       	std	Z+13, r25	; 0x0d
+ 48e:	84 87       	std	Z+12, r24	; 0x0c
+ 490:	84 ec       	ldi	r24, 0xC4	; 196
+ 492:	90 e0       	ldi	r25, 0x00	; 0
+ 494:	97 87       	std	Z+15, r25	; 0x0f
+ 496:	86 87       	std	Z+14, r24	; 0x0e
+ 498:	80 ec       	ldi	r24, 0xC0	; 192
+ 49a:	90 e0       	ldi	r25, 0x00	; 0
+ 49c:	91 8b       	std	Z+17, r25	; 0x11
+ 49e:	80 8b       	std	Z+16, r24	; 0x10
+ 4a0:	81 ec       	ldi	r24, 0xC1	; 193
+ 4a2:	90 e0       	ldi	r25, 0x00	; 0
+ 4a4:	93 8b       	std	Z+19, r25	; 0x13
+ 4a6:	82 8b       	std	Z+18, r24	; 0x12
+ 4a8:	82 ec       	ldi	r24, 0xC2	; 194
+ 4aa:	90 e0       	ldi	r25, 0x00	; 0
+ 4ac:	95 8b       	std	Z+21, r25	; 0x15
+ 4ae:	84 8b       	std	Z+20, r24	; 0x14
+ 4b0:	86 ec       	ldi	r24, 0xC6	; 198
+ 4b2:	90 e0       	ldi	r25, 0x00	; 0
+ 4b4:	97 8b       	std	Z+23, r25	; 0x17
+ 4b6:	86 8b       	std	Z+22, r24	; 0x16
+ 4b8:	11 8e       	std	Z+25, r1	; 0x19
+ 4ba:	12 8e       	std	Z+26, r1	; 0x1a
+ 4bc:	13 8e       	std	Z+27, r1	; 0x1b
+ 4be:	14 8e       	std	Z+28, r1	; 0x1c
+_GLOBAL__sub_I___vector_18():
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/HardwareSerial0.cpp:77
+ 4c0:	08 95       	ret
+
+000004c2 <Print::write(unsigned char const*, unsigned int)>:
+_ZN5Print5writeEPKhj():
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/Print.cpp:136
+size_t Print::println(const String &s)
+{
+  size_t n = print(s);
+  n += println();
+  return n;
+}
+ 4c2:	af 92       	push	r10
+ 4c4:	bf 92       	push	r11
+ 4c6:	cf 92       	push	r12
+ 4c8:	df 92       	push	r13
+ 4ca:	ef 92       	push	r14
+ 4cc:	ff 92       	push	r15
+ 4ce:	0f 93       	push	r16
+ 4d0:	1f 93       	push	r17
+ 4d2:	cf 93       	push	r28
+ 4d4:	df 93       	push	r29
+ 4d6:	6c 01       	movw	r12, r24
+ 4d8:	7b 01       	movw	r14, r22
+ 4da:	8b 01       	movw	r16, r22
+ 4dc:	04 0f       	add	r16, r20
+ 4de:	15 1f       	adc	r17, r21
+ 4e0:	eb 01       	movw	r28, r22
+ 4e2:	5e 01       	movw	r10, r28
+ 4e4:	ae 18       	sub	r10, r14
+ 4e6:	bf 08       	sbc	r11, r15
+ 4e8:	c0 17       	cp	r28, r16
+ 4ea:	d1 07       	cpc	r29, r17
+ 4ec:	59 f0       	breq	.+22     	; 0x504 <Print::write(unsigned char const*, unsigned int)+0x42>
+ 4ee:	69 91       	ld	r22, Y+
+ 4f0:	d6 01       	movw	r26, r12
+ 4f2:	ed 91       	ld	r30, X+
+ 4f4:	fc 91       	ld	r31, X
+ 4f6:	01 90       	ld	r0, Z+
+ 4f8:	f0 81       	ld	r31, Z
+ 4fa:	e0 2d       	mov	r30, r0
+ 4fc:	c6 01       	movw	r24, r12
+ 4fe:	09 95       	icall
+ 500:	89 2b       	or	r24, r25
+ 502:	79 f7       	brne	.-34     	; 0x4e2 <Print::write(unsigned char const*, unsigned int)+0x20>
+ 504:	c5 01       	movw	r24, r10
+ 506:	df 91       	pop	r29
+ 508:	cf 91       	pop	r28
+ 50a:	1f 91       	pop	r17
+ 50c:	0f 91       	pop	r16
+ 50e:	ff 90       	pop	r15
+ 510:	ef 90       	pop	r14
+ 512:	df 90       	pop	r13
+ 514:	cf 90       	pop	r12
+ 516:	bf 90       	pop	r11
+ 518:	af 90       	pop	r10
+ 51a:	08 95       	ret
+
+0000051c <Print::write(char const*) [clone .part.2]>:
+_ZN5Print5writeEPKc():
+ 51c:	fb 01       	movw	r30, r22
+ 51e:	01 90       	ld	r0, Z+
+ 520:	00 20       	and	r0, r0
+ 522:	e9 f7       	brne	.-6      	; 0x51e <Print::write(char const*) [clone .part.2]+0x2>
+ 524:	31 97       	sbiw	r30, 0x01	; 1
+ 526:	af 01       	movw	r20, r30
+ 528:	46 1b       	sub	r20, r22
+ 52a:	57 0b       	sbc	r21, r23
+ 52c:	dc 01       	movw	r26, r24
+ 52e:	ed 91       	ld	r30, X+
+ 530:	fc 91       	ld	r31, X
+ 532:	02 80       	ldd	r0, Z+2	; 0x02
+ 534:	f3 81       	ldd	r31, Z+3	; 0x03
+ 536:	e0 2d       	mov	r30, r0
+ 538:	09 94       	ijmp
+
+0000053a <Print::println()>:
+ 53a:	6f e1       	ldi	r22, 0x1F	; 31
+ 53c:	71 e0       	ldi	r23, 0x01	; 1
+ 53e:	0c 94 8e 02 	jmp	0x51c	; 0x51c <Print::write(char const*) [clone .part.2]>
+
+00000542 <Print::println(char const*)>:
+_ZN5Print7printlnEPKc():
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/Print.cpp:139
+
+size_t Print::println(const char c[])
+{
+ 542:	0f 93       	push	r16
+ 544:	1f 93       	push	r17
+ 546:	cf 93       	push	r28
+ 548:	df 93       	push	r29
+ 54a:	8c 01       	movw	r16, r24
+_ZN5Print5writeEPKc():
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/Print.h:53
+    int getWriteError() { return write_error; }
+    void clearWriteError() { setWriteError(0); }
+  
+    virtual size_t write(uint8_t) = 0;
+    size_t write(const char *str) {
+      if (str == NULL) return 0;
+ 54c:	d0 e0       	ldi	r29, 0x00	; 0
+ 54e:	c0 e0       	ldi	r28, 0x00	; 0
+ 550:	61 15       	cp	r22, r1
+ 552:	71 05       	cpc	r23, r1
+ 554:	19 f0       	breq	.+6      	; 0x55c <Print::println(char const*)+0x1a>
+ 556:	0e 94 8e 02 	call	0x51c	; 0x51c <Print::write(char const*) [clone .part.2]>
+ 55a:	ec 01       	movw	r28, r24
+_ZN5Print7printlnEPKc():
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/Print.cpp:141
+  size_t n = print(c);
+  n += println();
+ 55c:	c8 01       	movw	r24, r16
+ 55e:	0e 94 9d 02 	call	0x53a	; 0x53a <Print::println()>
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/Print.cpp:143
+  return n;
+}
+ 562:	8c 0f       	add	r24, r28
+ 564:	9d 1f       	adc	r25, r29
+ 566:	df 91       	pop	r29
+ 568:	cf 91       	pop	r28
+ 56a:	1f 91       	pop	r17
+ 56c:	0f 91       	pop	r16
+ 56e:	08 95       	ret
+
+00000570 <initVariant>:
+initVariant():
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/main.cpp:28
+int atexit(void (* /*func*/ )()) { return 0; }
+
+// Weak empty variant initialization function.
+// May be redefined by variant files.
+void initVariant() __attribute__((weak));
+void initVariant() { }
+ 570:	08 95       	ret
+
+00000572 <main>:
+main():
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/main.cpp:35
+//void setupUSB() __attribute__((weak));
+//void setupUSB() { }
+
+int main(void)
+{
+  init();
+ 572:	0e 94 70 03 	call	0x6e0	; 0x6e0 <init>
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/main.cpp:37
+
+  initVariant();
+ 576:	0e 94 b8 02 	call	0x570	; 0x570 <initVariant>
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/main.cpp:43
+
+#if defined(USBCON)
+  USBDevice.attach();
+#endif
+  
+  setup();
+ 57a:	0e 94 85 00 	call	0x10a	; 0x10a <setup>
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/main.cpp:47
+    
+  for (;;) {
+    loop();
+    if (serialEventRun) serialEventRun();
+ 57e:	c7 ed       	ldi	r28, 0xD7	; 215
+ 580:	d0 e0       	ldi	r29, 0x00	; 0
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/main.cpp:46
+#endif
+  
+  setup();
+    
+  for (;;) {
+    loop();
+ 582:	0e 94 8e 00 	call	0x11c	; 0x11c <loop>
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/main.cpp:47
+    if (serialEventRun) serialEventRun();
+ 586:	20 97       	sbiw	r28, 0x00	; 0
+ 588:	e1 f3       	breq	.-8      	; 0x582 <main+0x10>
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/main.cpp:47 (discriminator 1)
+ 58a:	0e 94 d7 00 	call	0x1ae	; 0x1ae <serialEventRun()>
+ 58e:	f9 cf       	rjmp	.-14     	; 0x582 <main+0x10>
+
+00000590 <__vector_16>:
+__vector_16():
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/wiring.c:606
+    "   brne 1b"                     // 2 cycles
+    : /* no outputs */
+    : "w" (us)
+  );
+  // return = 4 cycles
+}
+ 590:	1f 92       	push	r1
+ 592:	0f 92       	push	r0
+ 594:	0f b6       	in	r0, 0x3f	; 63
+ 596:	0f 92       	push	r0
+ 598:	11 24       	eor	r1, r1
+ 59a:	2f 93       	push	r18
+ 59c:	3f 93       	push	r19
+ 59e:	8f 93       	push	r24
+ 5a0:	9f 93       	push	r25
+ 5a2:	af 93       	push	r26
+ 5a4:	bf 93       	push	r27
+ 5a6:	80 91 c0 01 	lds	r24, 0x01C0	; 0x8001c0 <timer0_millis>
+ 5aa:	90 91 c1 01 	lds	r25, 0x01C1	; 0x8001c1 <timer0_millis+0x1>
+ 5ae:	a0 91 c2 01 	lds	r26, 0x01C2	; 0x8001c2 <timer0_millis+0x2>
+ 5b2:	b0 91 c3 01 	lds	r27, 0x01C3	; 0x8001c3 <timer0_millis+0x3>
+ 5b6:	30 91 bf 01 	lds	r19, 0x01BF	; 0x8001bf <timer0_fract>
+ 5ba:	23 e0       	ldi	r18, 0x03	; 3
+ 5bc:	23 0f       	add	r18, r19
+ 5be:	2d 37       	cpi	r18, 0x7D	; 125
+ 5c0:	58 f5       	brcc	.+86     	; 0x618 <__vector_16+0x88>
+ 5c2:	01 96       	adiw	r24, 0x01	; 1
+ 5c4:	a1 1d       	adc	r26, r1
+ 5c6:	b1 1d       	adc	r27, r1
+ 5c8:	20 93 bf 01 	sts	0x01BF, r18	; 0x8001bf <timer0_fract>
+ 5cc:	80 93 c0 01 	sts	0x01C0, r24	; 0x8001c0 <timer0_millis>
+ 5d0:	90 93 c1 01 	sts	0x01C1, r25	; 0x8001c1 <timer0_millis+0x1>
+ 5d4:	a0 93 c2 01 	sts	0x01C2, r26	; 0x8001c2 <timer0_millis+0x2>
+ 5d8:	b0 93 c3 01 	sts	0x01C3, r27	; 0x8001c3 <timer0_millis+0x3>
+ 5dc:	80 91 c4 01 	lds	r24, 0x01C4	; 0x8001c4 <timer0_overflow_count>
+ 5e0:	90 91 c5 01 	lds	r25, 0x01C5	; 0x8001c5 <timer0_overflow_count+0x1>
+ 5e4:	a0 91 c6 01 	lds	r26, 0x01C6	; 0x8001c6 <timer0_overflow_count+0x2>
+ 5e8:	b0 91 c7 01 	lds	r27, 0x01C7	; 0x8001c7 <timer0_overflow_count+0x3>
+ 5ec:	01 96       	adiw	r24, 0x01	; 1
+ 5ee:	a1 1d       	adc	r26, r1
+ 5f0:	b1 1d       	adc	r27, r1
+ 5f2:	80 93 c4 01 	sts	0x01C4, r24	; 0x8001c4 <timer0_overflow_count>
+ 5f6:	90 93 c5 01 	sts	0x01C5, r25	; 0x8001c5 <timer0_overflow_count+0x1>
+ 5fa:	a0 93 c6 01 	sts	0x01C6, r26	; 0x8001c6 <timer0_overflow_count+0x2>
+ 5fe:	b0 93 c7 01 	sts	0x01C7, r27	; 0x8001c7 <timer0_overflow_count+0x3>
+ 602:	bf 91       	pop	r27
+ 604:	af 91       	pop	r26
+ 606:	9f 91       	pop	r25
+ 608:	8f 91       	pop	r24
+ 60a:	3f 91       	pop	r19
+ 60c:	2f 91       	pop	r18
+ 60e:	0f 90       	pop	r0
+ 610:	0f be       	out	0x3f, r0	; 63
+ 612:	0f 90       	pop	r0
+ 614:	1f 90       	pop	r1
+ 616:	18 95       	reti
+ 618:	26 e8       	ldi	r18, 0x86	; 134
+ 61a:	23 0f       	add	r18, r19
+ 61c:	02 96       	adiw	r24, 0x02	; 2
+ 61e:	a1 1d       	adc	r26, r1
+ 620:	b1 1d       	adc	r27, r1
+ 622:	d2 cf       	rjmp	.-92     	; 0x5c8 <__vector_16+0x38>
+
+00000624 <micros>:
+micros():
+ 624:	3f b7       	in	r19, 0x3f	; 63
+ 626:	f8 94       	cli
+ 628:	80 91 c4 01 	lds	r24, 0x01C4	; 0x8001c4 <timer0_overflow_count>
+ 62c:	90 91 c5 01 	lds	r25, 0x01C5	; 0x8001c5 <timer0_overflow_count+0x1>
+ 630:	a0 91 c6 01 	lds	r26, 0x01C6	; 0x8001c6 <timer0_overflow_count+0x2>
+ 634:	b0 91 c7 01 	lds	r27, 0x01C7	; 0x8001c7 <timer0_overflow_count+0x3>
+ 638:	26 b5       	in	r18, 0x26	; 38
+ 63a:	a8 9b       	sbis	0x15, 0	; 21
+ 63c:	05 c0       	rjmp	.+10     	; 0x648 <micros+0x24>
+ 63e:	2f 3f       	cpi	r18, 0xFF	; 255
+ 640:	19 f0       	breq	.+6      	; 0x648 <micros+0x24>
+ 642:	01 96       	adiw	r24, 0x01	; 1
+ 644:	a1 1d       	adc	r26, r1
+ 646:	b1 1d       	adc	r27, r1
+ 648:	3f bf       	out	0x3f, r19	; 63
+ 64a:	ba 2f       	mov	r27, r26
+ 64c:	a9 2f       	mov	r26, r25
+ 64e:	98 2f       	mov	r25, r24
+ 650:	88 27       	eor	r24, r24
+ 652:	bc 01       	movw	r22, r24
+ 654:	cd 01       	movw	r24, r26
+ 656:	62 0f       	add	r22, r18
+ 658:	71 1d       	adc	r23, r1
+ 65a:	81 1d       	adc	r24, r1
+ 65c:	91 1d       	adc	r25, r1
+ 65e:	42 e0       	ldi	r20, 0x02	; 2
+ 660:	66 0f       	add	r22, r22
+ 662:	77 1f       	adc	r23, r23
+ 664:	88 1f       	adc	r24, r24
+ 666:	99 1f       	adc	r25, r25
+ 668:	4a 95       	dec	r20
+ 66a:	d1 f7       	brne	.-12     	; 0x660 <micros+0x3c>
+ 66c:	08 95       	ret
+
+0000066e <delay>:
+delay():
+ 66e:	8f 92       	push	r8
+ 670:	9f 92       	push	r9
+ 672:	af 92       	push	r10
+ 674:	bf 92       	push	r11
+ 676:	cf 92       	push	r12
+ 678:	df 92       	push	r13
+ 67a:	ef 92       	push	r14
+ 67c:	ff 92       	push	r15
+ 67e:	6b 01       	movw	r12, r22
+ 680:	7c 01       	movw	r14, r24
+ 682:	0e 94 12 03 	call	0x624	; 0x624 <micros>
+ 686:	4b 01       	movw	r8, r22
+ 688:	5c 01       	movw	r10, r24
+ 68a:	c1 14       	cp	r12, r1
+ 68c:	d1 04       	cpc	r13, r1
+ 68e:	e1 04       	cpc	r14, r1
+ 690:	f1 04       	cpc	r15, r1
+ 692:	e9 f0       	breq	.+58     	; 0x6ce <delay+0x60>
+ 694:	0e 94 ac 03 	call	0x758	; 0x758 <yield>
+ 698:	0e 94 12 03 	call	0x624	; 0x624 <micros>
+ 69c:	68 19       	sub	r22, r8
+ 69e:	79 09       	sbc	r23, r9
+ 6a0:	8a 09       	sbc	r24, r10
+ 6a2:	9b 09       	sbc	r25, r11
+ 6a4:	68 3e       	cpi	r22, 0xE8	; 232
+ 6a6:	73 40       	sbci	r23, 0x03	; 3
+ 6a8:	81 05       	cpc	r24, r1
+ 6aa:	91 05       	cpc	r25, r1
+ 6ac:	70 f3       	brcs	.-36     	; 0x68a <delay+0x1c>
+ 6ae:	21 e0       	ldi	r18, 0x01	; 1
+ 6b0:	c2 1a       	sub	r12, r18
+ 6b2:	d1 08       	sbc	r13, r1
+ 6b4:	e1 08       	sbc	r14, r1
+ 6b6:	f1 08       	sbc	r15, r1
+ 6b8:	88 ee       	ldi	r24, 0xE8	; 232
+ 6ba:	88 0e       	add	r8, r24
+ 6bc:	83 e0       	ldi	r24, 0x03	; 3
+ 6be:	98 1e       	adc	r9, r24
+ 6c0:	a1 1c       	adc	r10, r1
+ 6c2:	b1 1c       	adc	r11, r1
+ 6c4:	c1 14       	cp	r12, r1
+ 6c6:	d1 04       	cpc	r13, r1
+ 6c8:	e1 04       	cpc	r14, r1
+ 6ca:	f1 04       	cpc	r15, r1
+ 6cc:	29 f7       	brne	.-54     	; 0x698 <delay+0x2a>
+ 6ce:	ff 90       	pop	r15
+ 6d0:	ef 90       	pop	r14
+ 6d2:	df 90       	pop	r13
+ 6d4:	cf 90       	pop	r12
+ 6d6:	bf 90       	pop	r11
+ 6d8:	af 90       	pop	r10
+ 6da:	9f 90       	pop	r9
+ 6dc:	8f 90       	pop	r8
+ 6de:	08 95       	ret
+
+000006e0 <init>:
+init():
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/wiring.c:612
+
+void init()
+{
+  // this needs to be called before setup() or some functions won't
+  // work there
+  sei();
+ 6e0:	78 94       	sei
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/wiring.c:624
+
+  // On the ATmega168, timer 0 is also used for fast hardware pwm
+  // (using phase-correct PWM would mean that timer 0 overflowed half as often
+  // resulting in different millis() behavior on the ATmega8 and ATmega168)
+#if defined(TCCR0A) && defined(WGM01)
+  TCCR0A |= _BV(WGM01) | _BV(WGM00);
+ 6e2:	84 b5       	in	r24, 0x24	; 36
+ 6e4:	83 60       	ori	r24, 0x03	; 3
+ 6e6:	84 bd       	out	0x24, r24	; 36
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/wiring.c:639
+  #if defined(WGM00) && defined(WGM01) // The ATmega8 doesn't have WGM00 and WGM01
+    TCCR0 |= _BV(WGM01) | _BV(WGM00);
+  #endif
+#elif defined(TCCR0B) && defined(CS01) && defined(CS00)
+  // This combination is for the standard 168/328/640/1280/1281/2560/2561
+  TCCR0B |= _BV(CS01) | _BV(CS00);
+ 6e8:	85 b5       	in	r24, 0x25	; 37
+ 6ea:	83 60       	ori	r24, 0x03	; 3
+ 6ec:	85 bd       	out	0x25, r24	; 37
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/wiring.c:651
+
+// Enable timer 0 overflow interrupt
+#if defined(TIMSK) && defined(TOIE0)
+  TIMSK |= _BV(TOIE0);
+#elif defined(TIMSK0) && defined(TOIE0)
+  TIMSK0 |= _BV(TOIE0);
+ 6ee:	ee e6       	ldi	r30, 0x6E	; 110
+ 6f0:	f0 e0       	ldi	r31, 0x00	; 0
+ 6f2:	80 81       	ld	r24, Z
+ 6f4:	81 60       	ori	r24, 0x01	; 1
+ 6f6:	80 83       	st	Z, r24
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/wiring.c:662
+// this is better for motors as it ensures an even waveform
+// note, however, that fast pwm mode can achieve a frequency of up
+// 8 MHz (with a 16 MHz clock) at 50% duty cycle
+
+#if defined(TCCR1B) && defined(CS11) && defined(CS10)
+  TCCR1B = _BV(CS11); // Set timer 1 prescale factor to 64
+ 6f8:	e1 e8       	ldi	r30, 0x81	; 129
+ 6fa:	f0 e0       	ldi	r31, 0x00	; 0
+ 6fc:	82 e0       	ldi	r24, 0x02	; 2
+ 6fe:	80 83       	st	Z, r24
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/wiring.c:664
+#if F_CPU >= 8000000L
+  TCCR1B |= _BV(CS10);
+ 700:	80 81       	ld	r24, Z
+ 702:	81 60       	ori	r24, 0x01	; 1
+ 704:	80 83       	st	Z, r24
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/wiring.c:673
+#if F_CPU >= 8000000L
+  TCCR1 |= _BV(CS10);
+#endif
+#endif
+#if defined(TCCR1A) && defined(WGM10)
+  TCCR1A |= _BV(WGM10); // Put timer 1 in 8-bit phase correct pwm mode
+ 706:	e0 e8       	ldi	r30, 0x80	; 128
+ 708:	f0 e0       	ldi	r31, 0x00	; 0
+ 70a:	80 81       	ld	r24, Z
+ 70c:	81 60       	ori	r24, 0x01	; 1
+ 70e:	80 83       	st	Z, r24
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/wiring.c:680
+
+// Set timer 2 prescale factor to 64
+#if defined(TCCR2) && defined(CS22)
+  TCCR2 |= _BV(CS22);
+#elif defined(TCCR2B) && defined(CS22)
+  TCCR2B |= _BV(CS22);
+ 710:	e1 eb       	ldi	r30, 0xB1	; 177
+ 712:	f0 e0       	ldi	r31, 0x00	; 0
+ 714:	80 81       	ld	r24, Z
+ 716:	84 60       	ori	r24, 0x04	; 4
+ 718:	80 83       	st	Z, r24
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/wiring.c:689
+
+// Configure timer 2 for phase correct pwm (8-bit)
+#if defined(TCCR2) && defined(WGM20)
+  TCCR2 |= _BV(WGM20);
+#elif defined(TCCR2A) && defined(WGM20)
+  TCCR2A |= _BV(WGM20);
+ 71a:	e0 eb       	ldi	r30, 0xB0	; 176
+ 71c:	f0 e0       	ldi	r31, 0x00	; 0
+ 71e:	80 81       	ld	r24, Z
+ 720:	81 60       	ori	r24, 0x01	; 1
+ 722:	80 83       	st	Z, r24
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/wiring.c:695
+//#else
+  // Timer 2 not finished (may not be present on this CPU)
+#endif
+
+#if defined(TCCR3B) && defined(CS31) && defined(WGM30)
+  TCCR3B |= _BV(CS31) | _BV(CS30); // Set timer 3 prescale factor to 64
+ 724:	e1 e9       	ldi	r30, 0x91	; 145
+ 726:	f0 e0       	ldi	r31, 0x00	; 0
+ 728:	80 81       	ld	r24, Z
+ 72a:	83 60       	ori	r24, 0x03	; 3
+ 72c:	80 83       	st	Z, r24
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/wiring.c:696
+  TCCR3A |= _BV(WGM30);            // Put timer 3 in 8-bit phase correct pwm mode
+ 72e:	e0 e9       	ldi	r30, 0x90	; 144
+ 730:	f0 e0       	ldi	r31, 0x00	; 0
+ 732:	80 81       	ld	r24, Z
+ 734:	81 60       	ori	r24, 0x01	; 1
+ 736:	80 83       	st	Z, r24
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/wiring.c:705
+  TCCR4B |= _BV(CS42) | _BV(CS41) | _BV(CS40); // Set timer 4 prescale factor to 64
+  TCCR4D |= _BV(WGM40);                        // Put timer 4 in phase- and frequency-correct PWM mode 
+  TCCR4A |= _BV(PWM4A);                        // Enable PWM mode for comparator OCR4A
+  TCCR4C |= _BV(PWM4D);                        // Enable PWM mode for comparator OCR4D 
+#elif defined(TCCR4B) && defined(CS41) && defined(WGM40)
+  TCCR4B |= _BV(CS41) | _BV(CS40); // Set timer 4 prescale factor to 64
+ 738:	e1 ea       	ldi	r30, 0xA1	; 161
+ 73a:	f0 e0       	ldi	r31, 0x00	; 0
+ 73c:	80 81       	ld	r24, Z
+ 73e:	83 60       	ori	r24, 0x03	; 3
+ 740:	80 83       	st	Z, r24
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/wiring.c:706
+  TCCR4A |= _BV(WGM40);            // Put timer 4 in 8-bit phase correct pwm mode
+ 742:	e0 ea       	ldi	r30, 0xA0	; 160
+ 744:	f0 e0       	ldi	r31, 0x00	; 0
+ 746:	80 81       	ld	r24, Z
+ 748:	81 60       	ori	r24, 0x01	; 1
+ 74a:	80 83       	st	Z, r24
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/wiring.c:717
+#endif
+
+#if defined(ADCSRA)
+  // set a2d prescaler so we are inside the desired 50-200 KHz range.
+  #if F_CPU >= 16000000 // 16 MHz / 128 = 125 KHz
+    ADCSRA = _BV(ADPS2) | _BV(ADPS1) | _BV(ADPS0) | _BV(ADEN);
+ 74c:	87 e8       	ldi	r24, 0x87	; 135
+ 74e:	80 93 7a 00 	sts	0x007A, r24	; 0x80007a <__TEXT_REGION_LENGTH__+0x7f807a>
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/wiring.c:737
+  // here so they can be used as normal digital i/o; they will be
+  // reconnected in Serial.begin()
+#if defined(UCSRB)
+  UCSRB = 0;
+#elif defined(UCSR0B)
+  UCSR0B = 0;
+ 752:	10 92 c1 00 	sts	0x00C1, r1	; 0x8000c1 <__TEXT_REGION_LENGTH__+0x7f80c1>
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/wiring.c:739
+#endif
+}
+ 756:	08 95       	ret
+
+00000758 <yield>:
+__empty():
+C:\Users\mateu\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.0.9\cores\MCUdude_corefiles/hooks.c:30
+ * Its defined as a weak symbol and it can be redefined to implement a
+ * real cooperative scheduler.
+ */
+static void __empty() {
+  // Empty
+}
+ 758:	08 95       	ret
+
+0000075a <__udivmodsi4>:
+__udivmodsi4():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1638
+ 75a:	a1 e2       	ldi	r26, 0x21	; 33
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1639
+ 75c:	1a 2e       	mov	r1, r26
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1640
+ 75e:	aa 1b       	sub	r26, r26
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1641
+ 760:	bb 1b       	sub	r27, r27
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1642
+ 762:	fd 01       	movw	r30, r26
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1644
+ 764:	0d c0       	rjmp	.+26     	; 0x780 <__udivmodsi4_ep>
+
+00000766 <__udivmodsi4_loop>:
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1646
+ 766:	aa 1f       	adc	r26, r26
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1647
+ 768:	bb 1f       	adc	r27, r27
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1648
+ 76a:	ee 1f       	adc	r30, r30
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1649
+ 76c:	ff 1f       	adc	r31, r31
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1650
+ 76e:	a2 17       	cp	r26, r18
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1651
+ 770:	b3 07       	cpc	r27, r19
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1652
+ 772:	e4 07       	cpc	r30, r20
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1653
+ 774:	f5 07       	cpc	r31, r21
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1654
+ 776:	20 f0       	brcs	.+8      	; 0x780 <__udivmodsi4_ep>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1655
+ 778:	a2 1b       	sub	r26, r18
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1656
+ 77a:	b3 0b       	sbc	r27, r19
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1657
+ 77c:	e4 0b       	sbc	r30, r20
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1658
+ 77e:	f5 0b       	sbc	r31, r21
+
+00000780 <__udivmodsi4_ep>:
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1660
+ 780:	66 1f       	adc	r22, r22
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1661
+ 782:	77 1f       	adc	r23, r23
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1662
+ 784:	88 1f       	adc	r24, r24
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1663
+ 786:	99 1f       	adc	r25, r25
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1664
+ 788:	1a 94       	dec	r1
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1665
+ 78a:	69 f7       	brne	.-38     	; 0x766 <__udivmodsi4_loop>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1667
+ 78c:	60 95       	com	r22
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1668
+ 78e:	70 95       	com	r23
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1669
+ 790:	80 95       	com	r24
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1670
+ 792:	90 95       	com	r25
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1672
+ 794:	9b 01       	movw	r18, r22
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1674
+ 796:	ac 01       	movw	r20, r24
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1676
+ 798:	bd 01       	movw	r22, r26
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1678
+ 79a:	cf 01       	movw	r24, r30
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1680
+ 79c:	08 95       	ret
+
+0000079e <__tablejump2__>:
+__tablejump2__():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2296
+ 79e:	ee 0f       	add	r30, r30
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2297
+ 7a0:	ff 1f       	adc	r31, r31
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2328
+ 7a2:	05 90       	lpm	r0, Z+
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2329
+ 7a4:	f4 91       	lpm	r31, Z
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2330
+ 7a6:	e0 2d       	mov	r30, r0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2331
+ 7a8:	09 94       	ijmp
+
+000007aa <_exit>:
+exit():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2278
+ 7aa:	f8 94       	cli
+
+000007ac <__stop_program>:
+__stop_program():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2280
+ 7ac:	ff cf       	rjmp	.-2      	; 0x7ac <__stop_program>

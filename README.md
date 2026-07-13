@@ -1,3 +1,5 @@
+<img width="1595" height="1021" alt="Audi CDC v1 1" src="https://github.com/user-attachments/assets/505bfb73-a71a-4355-bd7b-d4c9362d64be" />
+
 # Audi CDC Emulator
 
 Embedded CD changer emulator for Audi factory head units with Bluetooth audio streaming and hands-free phone functionality.
@@ -98,5 +100,8 @@ The following improvements are planned for the next PCB revision:
    - The SSM2211 uses an active LOW enable input, requiring inverted control logic.
 7. Add series resistors and TVS protection diodes on the USB data lines.
 8. Improve Digispark module pin placement for easier assembly and debugging.
+
+<img width="2048" height="1536" alt="CDC v1 1 with inprovements" src="https://github.com/user-attachments/assets/5f518655-e0ce-474a-a1b8-336dca8e06db" />
+
 
 ---

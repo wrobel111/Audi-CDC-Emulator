@@ -1,62 +1,102 @@
 # Audi CDC Emulator
 
-Embedded implementation of an Audi CD changer emulator with Bluetooth audio streaming and hands-free phone functionality.
+Embedded CD changer emulator for Audi factory head units with Bluetooth audio streaming and hands-free phone functionality.
 
-The project is designed to integrate modern Bluetooth audio capabilities with factory Audi head units by emulating the communication behavior of an original CD changer module.
+The project emulates an original Audi CD changer, allowing modern Bluetooth connectivity while preserving the original vehicle infotainment system. The hardware and firmware were designed to integrate seamlessly with factory radios without permanent vehicle modifications.
+
+---
 
 ## Features
 
 - Audi CD changer (CDC) protocol emulation
-- Bluetooth audio integration
-- Hands-free phone functionality
-- AT command control of Bluetooth module
-- Custom embedded firmware running on ATmega328P
-- Hardware interface designed for integration with factory car audio systems
+- Bluetooth audio streaming (A2DP)
+- Hands-free phone functionality (HFP)
+- Steering wheel (Rem-C line) and radio button support
+- UART communication with Bluetooth module using AT commands
+- Custom hardware designed for automotive applications
+- AVR firmware written in C/C++
+
+---
 
 ## Hardware
 
-### Main controller
+### Microcontroller
 
-- Microcontroller: ATmega328PB
+- ATmega328PB
 
 ### Bluetooth module
 
-- BK3266 or BK3254 Bluetooth audio module
+- BK3254
 
 The Bluetooth module is controlled through UART using AT commands.
 
-Reference:
-- BK3254/BK3266 supported commands: https://github.com/tomaskovacik/BK3254/wiki/Supported-commands-and-event-send-from-module
+Supported AT commands:
+https://github.com/tomaskovacik/BK3254/wiki/Supported-commands-and-event-send-from-module
 
-## Development notes
+---
 
-During development, multiple hardware revisions were tested to improve reliability and compatibility.
+## Hardware Design
 
-### V1.1 improvements and considerations
+The PCB was designed specifically for integration with the Audi factory audio system.
 
-- Added AUX detection using enable signal from 3.5 mm jack connection
-- Standardized Bluetooth module usage around BK3266
-- Verified amplifier enable signal behavior
-- Updated connector pinout to standard 6-pin ISP layout
-- Improved UART connector layout:
-  - TX
-  - RX
-  - GND
-  - +5V
+Main hardware components include:
 
-## Technical aspects
+- ATmega328PB microcontroller
+- BK3254 Bluetooth module
+- Audio amplifier
+- Automotive power supply interface
+- ISP programming connector
+- UART service connector
 
-The project involved:
+Hardware design files are available in the `Hardware` directory.
 
-- Reverse engineering of Audi CDC communication
-- Embedded firmware development in C/C++
-- UART communication
-- Bluetooth module integration
-- Hardware debugging and prototyping
+---
 
-## Future improvements
+## Firmware
 
-- Additional Audi head unit compatibility
-- Improved Bluetooth module support
-- Further hardware revisions
-- Better documentation of CDC protocol
+The firmware is responsible for:
+
+- emulating the Audi CD changer
+- controlling the Bluetooth module
+- handling button events
+- switching between music playback and phone calls
+- managing amplifier enable signals
+- communication with the factory head unit
+
+- ## Development History
+
+### 24 May 2025
+
+#### Added
+
+- Support for BK3254 Bluetooth module
+- Bluetooth music streaming
+- Hands-free phone functionality
+
+#### Changed
+
+- Migrated timer implementation from Timer0 to Timer3 on ATmega328PB
+
+---
+
+## PCB Revision Notes (v1.1)
+
+The following improvements are planned for the next PCB revision:
+
+1. Add AUX detection using the switching contacts of the 3.5 mm jack connector.
+2. Standardize the design to use the BK3254 Bluetooth module only.
+3. Verify amplifier enable signal timing.
+4. Replace the programming connector with a standard 6-pin ISP header.
+5. Reorder the serial connector pinout:
+
+   - +5 V
+   - TX
+   - RX
+   - GND
+
+6. Replace the audio amplifier with the SSM2211.
+   - The SSM2211 uses an active LOW enable input, requiring inverted control logic.
+7. Add series resistors and TVS protection diodes on the USB data lines.
+8. Improve Digispark module pin placement for easier assembly and debugging.
+
+---
